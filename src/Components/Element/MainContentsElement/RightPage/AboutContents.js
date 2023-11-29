@@ -1,8 +1,6 @@
 import React from "react";
-
 import Title from "./AboutElement/Title";
 import styled, { keyframes } from "styled-components";
-import { LogoJavascript } from "react-ionicons";
 
 const fadeIn = keyframes`
    from {
