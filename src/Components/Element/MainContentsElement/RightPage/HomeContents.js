@@ -104,6 +104,9 @@ const Right = styled.div`
   align-items: center;
   justify-content: center;
 `;
+const PointText = styled.h3`
+  color: rgba(22, 73, 184);
+`;
 const TEXTS = ["Patience", "Passion", "User-centered"];
 
 const HomeContents = ({ setMenuItem }) => {
@@ -129,7 +132,7 @@ const HomeContents = ({ setMenuItem }) => {
         <Tag>
           <Right>
             <TextTransition springConfig={presets.gentle}>
-              <h3> {TEXTS[index % TEXTS.length]} </h3>
+              <PointText> {TEXTS[index % TEXTS.length]} </PointText>
             </TextTransition>{" "}
           </Right>
           <Left>

@@ -12,11 +12,18 @@ const FooterStyle = styled.div`
     display: none;
   }
 `;
-
+const Copyright = styled.h5`
+  text-align: left;
+`;
 const Footer = () => {
   return (
     <FooterStyle>
-      <h5>Copyright © 2023</h5>
+      <Copyright>
+        Copyright © H/M
+        <br />
+        All Rights Reserved.
+      </Copyright>
+
       <LinkIcon />
     </FooterStyle>
   );

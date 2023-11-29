@@ -39,7 +39,9 @@ const MenuSec = styled.div`
   width: 100%;
   height: 100%;
 `;
-
+const Copyright = styled.h5`
+  text-align: center;
+`;
 const PopUp = ({ menuToggle, menuItem, setMenuItem }) => {
   return (
     <PopupMenu show={menuToggle}>
@@ -47,7 +49,10 @@ const PopUp = ({ menuToggle, menuItem, setMenuItem }) => {
         <MenuSec>
           <Menu menuItem={menuItem} setMenuItem={setMenuItem} />
           <LinkIcon />
-          <h5>Copyright © 2023</h5>
+          <Copyright>
+            Copyright © H/M <br />
+            All Rights Reserved.
+          </Copyright>
         </MenuSec>
       </MenuPup>
     </PopupMenu>

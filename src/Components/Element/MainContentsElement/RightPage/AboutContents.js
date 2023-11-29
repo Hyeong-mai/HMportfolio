@@ -48,38 +48,45 @@ const LiStyle = styled.li`
 const Animated1 = styled.div`
   opacity: 0;
   animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남 // 애니메이션으로 나타남
+  margin-bottom: 30px;
 `;
 const Animated2 = styled.div`
   opacity: 0;
   animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남
   animation-delay: 0.6s;
+  margin-bottom: 30px;
 `;
 const Animated3 = styled.div`
   opacity: 0;
   animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남
   animation-delay: 0.9s;
+  margin-bottom: 30px;
 `;
 const Animated4 = styled.div`
   opacity: 0;
   animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남
   animation-delay: 1.2s;
+  margin-bottom: 30px;
 `;
 const Animated5 = styled.div`
   opacity: 0;
   animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남
   animation-delay: 1.5s;
+  margin-bottom: 30px;
 `;
 
 const Animated6 = styled.div`
   opacity: 0;
   animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남
   animation-delay: 1.8s;
+  margin-bottom: 30px;
 `;
 
 const Animated7 = styled.div`
   opacity: 0;
   animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남
   animation-delay: 2.1s;
+  margin-bottom: 30px;
 `;
 
 const AboutContents = () => {
@@ -90,15 +97,16 @@ const AboutContents = () => {
           <Title text={`ABOUT_ME`} />
           <PText>
             끈기와 열정을 바탕으로 사용자의 가치를 최우선시하는 개발자
-            김형민입니다. 시간을 내어 제 포트폴리오를 봐주셔서 감사합니다.
+            김형민입니다. <br />
+            시간을 내어 제 포트폴리오를 봐주셔서 감사합니다.
           </PText>
         </Animated1>
         <Animated2>
           <Title text={`_EDUCATION`} />
           <UlStyle>
             <LiStyle>
-              2018.06 ~ 2018.12 한국소프트웨어진흥협회 - 소프트웨어 보안을 위한
-              시큐어 프로그래밍 과정 수료
+              2018.06 ~ 2018.12 한국소프트웨어진흥협회
+              <br /> - 소프트웨어 보안을 위한 시큐어 프로그래밍 과정 수료
             </LiStyle>
             <LiStyle>
               2015.03 ~ 2018.02 양영디지털 고등학교 소프트웨어과 졸업

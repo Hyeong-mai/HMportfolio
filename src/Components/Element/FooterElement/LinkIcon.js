@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { LogoGithub } from "react-ionicons";
+import { LogoGithub, Mail } from "react-ionicons";
 const LinkWrap = styled.div`
   display: flex;
   flex-direction: row;
@@ -30,17 +30,21 @@ const Nbox = styled.div`
 const Ntitle = styled.h2`
   margin: 0;
 `;
+
 const LinkIcon = () => {
   return (
     <LinkWrap>
       <Github href="https://github.com/Hyeong-mai">
-        <LogoGithub height="33px" width="33px" />
+        <LogoGithub height="35px" width="35px" />
       </Github>
       <Notion href="https://cute-apogee-96e.notion.site/Let-s-go-13f9b2b16d7b432eb2835a27401226c7?pvs=4">
         <Nbox>
           <Ntitle>N</Ntitle>
         </Nbox>
       </Notion>
+      <a href="mailto:toat1216@gmail.com">
+        <Mail height="35px" width="35px" />
+      </a>
     </LinkWrap>
   );
 };
