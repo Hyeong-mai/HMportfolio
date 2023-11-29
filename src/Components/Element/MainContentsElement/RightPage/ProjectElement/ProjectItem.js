@@ -42,6 +42,11 @@ const Item = styled.div`
   &:hover::after {
     background-color: rgba(0, 0, 0, 0.7);
   }
+  @media (max-width: 598px) {
+    width: 90%;
+    height: 100%;
+    margin-bottom: 50px;
+  }
 `;
 
 const Title = styled.button`

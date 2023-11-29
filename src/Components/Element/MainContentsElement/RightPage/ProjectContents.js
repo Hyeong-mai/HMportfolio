@@ -13,11 +13,26 @@ const fadeIn = keyframes`
     transform: translateY(0);
   }
 `;
+const AnimatedBase = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 350px;
+  opacity: 0;
+  animation: ${fadeIn} 0.3s ease-out forwards;
+
+  // 화면 크기가 작을 때 스타일 변경
+  @media (max-width: 598px) {
+    flex-direction: column;
+    height: 350px;
+  }
+`;
 const Animated1 = styled.div`
   opacity: 0;
   animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남 // 애니메이션으로 나타남
 `;
-const Animated2 = styled.div`
+const Animated2 = styled(AnimatedBase)`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,8 +41,11 @@ const Animated2 = styled.div`
   opacity: 0;
   animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남
   animation-delay: 0.6s;
+  @media (max-width: 598px) {
+    height: 700px;
+  }
 `;
-const Animated3 = styled.div`
+const Animated3 = styled(AnimatedBase)`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,8 +54,11 @@ const Animated3 = styled.div`
   opacity: 0;
   animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남
   animation-delay: 0.9s;
+  @media (max-width: 768px) {
+    height: 700px;
+  }
 `;
-const Animated4 = styled.div`
+const Animated4 = styled(AnimatedBase)`
   display: flex;
   align-items: center;
   justify-content: space-between;

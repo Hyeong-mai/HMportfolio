@@ -11,6 +11,7 @@ const MainContentsStyle = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: row;
+
   @media (max-width: 1208px) {
     height: 90%;
   }

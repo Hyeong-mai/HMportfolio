@@ -12,7 +12,7 @@ const Logo = () => {
   return (
     <LogoStyle href="/">
       <h1>
-        H<Point>/</Point>M
+        H<Point> / </Point>M
       </h1>
     </LogoStyle>
   );

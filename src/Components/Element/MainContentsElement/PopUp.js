@@ -6,6 +6,7 @@ import LinkIcon from "../FooterElement/LinkIcon";
 const PopupMenu = styled.div`
   width: 100%;
   height: 90%;
+  overflow: hidden;
   bottom: 0;
   right: 0;
   position: absolute;
