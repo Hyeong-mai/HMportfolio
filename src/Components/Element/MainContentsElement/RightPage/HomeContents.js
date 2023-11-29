@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import TextTransition, { presets } from "react-text-transition";
+import { TypeAnimation } from "react-type-animation";
 
 const fadeIn = keyframes`
    from {
@@ -17,7 +18,8 @@ const fadeIn = keyframes`
 const AnimatedFirst = styled.div`
   width: 80%;
   opacity: 0;
-  animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남 // 애니메이션으로 나타남
+  animation: ${fadeIn} 0.3s ease-out forwards;
+  margin-bottom: 20px // 애니메이션으로 나타남 ; // 애니메이션으로 나타남
 `;
 const AnimatedSeconds = styled.div`
   width: 80%;
@@ -122,7 +124,17 @@ const HomeContents = ({ setMenuItem }) => {
     <ContentsStyle>
       <AnimatedFirst>
         <Name>
-          <h1>HYEONGMIN &nbsp;&nbsp;KIM</h1>
+          <TypeAnimation
+            sequence={[
+              // Same substring at the start will only be typed once, initially
+              "HYEONGMIN KIM ",
+              3000,
+            ]}
+            speed={200}
+            style={{ fontSize: "2em", fontWeight: "bold" }}
+            repeat={0}
+          />
+          {/* <h1>HYEONGMIN &nbsp;&nbsp;KIM</h1> */}
         </Name>
       </AnimatedFirst>
       <AnimatedSeconds>
