@@ -32,7 +32,7 @@ const AnimatedThirds = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 60%;
+  width: 100%;
   opacity: 0;
   animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남
   animation-delay: 0.9s;
@@ -133,18 +133,20 @@ const HomeContents = ({ setMenuItem }) => {
     <ContentsStyle>
       <AnimatedFirst>
         <Name>
-          <TypeAnimation
-            sequence={[
-              // Same substring at the start will only be typed once, initially
-              "HYEONGMIN KIM ",
-              3000,
-              "WELCOME TO MY WORLD",
-              3000,
-            ]}
-            speed={200}
-            style={{ fontSize: "2em", fontWeight: "bold" }}
-            repeat={Infinity}
-          />
+          <h1>
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed once, initially
+                "HYEONG MIN KIM ",
+                3000,
+                "WELCOME TO MY WORLD",
+                3000,
+              ]}
+              speed={200}
+              // style={{ fontSize: "px", fontWeight: "bold" }}
+              repeat={Infinity}
+            />
+          </h1>
           {/* <h1>HYEONGMIN &nbsp;&nbsp;KIM</h1> */}
         </Name>
       </AnimatedFirst>
