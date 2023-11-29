@@ -21,7 +21,7 @@ const PopupMenu = styled.div`
   }
 `;
 const MenuPup = styled.div`
-  width: 30%;
+  width: 50%;
   height: 100%;
   background-color: white;
   display: flex;
