@@ -7,7 +7,7 @@ const MenuStyle = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 60%;
+  height: 40%;
   @media (max-width: 1208px) {
     flex-direction: column; // 화면 크기가 768px 이하일 때 Menu 컴포넌트 숨김
     height: 100%;
@@ -20,8 +20,9 @@ const MenuItem = styled.button`
   height: 100%;
   margin-right: 20px;
   border-style: none;
-  background-color: ${(props) => (props.isActive ? "black" : "white")};
-  color: ${(props) => (props.isActive ? "white" : "black")};
+  background-color: white;
+  font-size: ${(props) => (props.isActive ? "22px" : "16px")};
+  color: ${(props) => (props.isActive ? "black" : "gray")};
   transition: 0.5s;
   cursor: pointer;
   @media (max-width: 1208px) {
@@ -31,9 +32,9 @@ const MenuItem = styled.button`
     font-size: 22px;
   }
   &:hover {
-    background: black;
-    color: white;
+    font-size: 22px;
     transition: 0.5s;
+    color: black;
   }
 `;
 

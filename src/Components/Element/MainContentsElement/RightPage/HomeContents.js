@@ -19,7 +19,7 @@ const AnimatedFirst = styled.div`
   width: 80%;
   opacity: 0;
   animation: ${fadeIn} 0.3s ease-out forwards;
-  margin-bottom: 20px // 애니메이션으로 나타남 ; // 애니메이션으로 나타남
+  margin-bottom: 20px; // 애니메이션으로 나타남 ; // 애니메이션으로 나타남
 `;
 const AnimatedSeconds = styled.div`
   width: 80%;
@@ -28,13 +28,21 @@ const AnimatedSeconds = styled.div`
   animation-delay: 0.6s;
 `;
 const AnimatedThirds = styled.div`
-  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
   opacity: 0;
   animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남
   animation-delay: 0.9s;
 `;
 const AnimatedFourth = styled.div`
-  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 40%;
   opacity: 0;
   animation: ${fadeIn} 0.5s ease-out forwards; // 애니메이션으로 나타남
   animation-delay: 1.5s;
@@ -61,9 +69,9 @@ const Line = styled.div`
 `;
 const Tag = styled.div`
   color: black;
-  width: 10 0%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   margin-top: 10px;
@@ -100,15 +108,16 @@ const Left = styled.div`
 `;
 const Right = styled.div`
   width: 70%;
-  height: 100%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
-const PointText = styled.h3`
+const PointText = styled.h1`
   color: rgba(22, 73, 184);
 `;
+
 const TEXTS = ["Patience", "Passion", "User-centered"];
 
 const HomeContents = ({ setMenuItem }) => {
@@ -129,10 +138,12 @@ const HomeContents = ({ setMenuItem }) => {
               // Same substring at the start will only be typed once, initially
               "HYEONGMIN KIM ",
               3000,
+              "WELCOME TO MY WORLD",
+              3000,
             ]}
             speed={200}
             style={{ fontSize: "2em", fontWeight: "bold" }}
-            repeat={0}
+            repeat={Infinity}
           />
           {/* <h1>HYEONGMIN &nbsp;&nbsp;KIM</h1> */}
         </Name>

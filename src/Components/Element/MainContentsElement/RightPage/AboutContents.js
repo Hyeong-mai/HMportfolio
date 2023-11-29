@@ -102,7 +102,7 @@ const AboutContents = () => {
           </PText>
         </Animated1>
         <Animated2>
-          <Title text={`_EDUCATION`} />
+          <Title text={`EDUCATION`} />
           <UlStyle>
             <LiStyle>
               2018.06 ~ 2018.12 한국소프트웨어진흥협회
@@ -114,7 +114,7 @@ const AboutContents = () => {
           </UlStyle>
         </Animated2>
         <Animated3>
-          <Title text={`_CERTIFICATE`} />
+          <Title text={`CERTIFICATE`} />
           <UlStyle>
             <LiStyle>정보처리기사(2017)</LiStyle>
             <LiStyle>웹디자인기능사(2017)</LiStyle>
