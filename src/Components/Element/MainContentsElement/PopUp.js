@@ -43,12 +43,17 @@ const MenuSec = styled.div`
 const Copyright = styled.h5`
   text-align: center;
 `;
-const PopUp = ({ menuToggle, menuItem, setMenuItem }) => {
+const PopUp = ({ setMenuToggle, menuToggle, menuItem, setMenuItem }) => {
   return (
     <PopupMenu show={menuToggle}>
       <MenuPup show={menuToggle}>
         <MenuSec>
-          <Menu menuItem={menuItem} setMenuItem={setMenuItem} />
+          <Menu
+            setMenuToggle={setMenuToggle}
+            menuToggle={menuToggle}
+            menuItem={menuItem}
+            setMenuItem={setMenuItem}
+          />
           <LinkIcon />
           <Copyright>
             Copyright © H/M <br />

@@ -17,12 +17,13 @@ const MainContentsStyle = styled.div`
   }
 `;
 
-const MainContents = ({ menuToggle, menuItem, setMenuItem }) => {
+const MainContents = ({ setMenuToggle, menuToggle, menuItem, setMenuItem }) => {
   return (
     <MainContentsStyle>
       <LeftContents />
       <RightContents setMenuItem={setMenuItem} menuItem={menuItem} />
       <PopUp
+        setMenuToggle={setMenuToggle}
         menuToggle={menuToggle}
         menuItem={menuItem}
         setMenuItem={setMenuItem}

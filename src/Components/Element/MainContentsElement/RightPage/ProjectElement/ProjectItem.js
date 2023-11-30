@@ -15,7 +15,7 @@ const ArrowIcon = styled.span`
 
 const Item = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 45%;
   height: 90%;
@@ -50,24 +50,30 @@ const Item = styled.div`
 `;
 
 const Title = styled.button`
+  height: 40%;
   border: none;
   display: flex;
   z-index: 1;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   position: absolute;
-  bottom: -120px; // 초기 위치를 바닥에서 약간 위로 설정
+  bottom: -50px; // 초기 위치를 바닥에서 약간 위로 설정
   left: 50%; // 가운데 정렬을 위해 left를 50%로 설정
   transform: translateX(-50%) translateY(0); // 좌우 중앙 정렬 및 초기 Y 위치 설정
   width: 80%; // 제목의 너비를 줄임
   text-align: center;
-  background-color: #333;
+  background-color: rgba(3, 3, 3, 0.7);
   border-radius: 20px;
   cursor: pointer;
+  color: white;
   transition: transform 0.3s ease, display 0s ease 0.3s;
+  transition: transform 0.3s ease, height 0.3s ease;
   ${Item}:hover & {
-    transform: translateX(-50%) translateY(-140px); // hover 시 위로 이동
+    background-color: rgba(3, 3, 3, 0.7);
+    height: 80%;
+    transform: translateX(-50%) translateY(-80px); // hover 시 위로 이동
+    opacity: 1; // Add opacity transition effectover 시 위로 이동
   }
 `;
 const Subtitle = styled.p`
@@ -76,19 +82,17 @@ const Subtitle = styled.p`
   text-align: center;
   transition: 0.3s;
   @media (max-width: 720px) {
-    font-size: 9px;
+    font-size: 16px;
   }
   ${Title}:hover & {
-    color: white; // hover 시 위로 이동
+    color: gray; // hover 시 위로 이동
   }
 `;
 const TextWrap = styled.div`
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  ${Item}:hover & {
-    opacity: 1; // 흐린 효과
-  }
-  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 `;
 const ProjectItem = ({ imgSrc, title, link }) => {
   const handleButtonClick = () => {
@@ -97,14 +101,14 @@ const ProjectItem = ({ imgSrc, title, link }) => {
 
   return (
     <Item imgSrc={imgSrc}>
-      <TextWrap>
-        <h3>{title}</h3>
-      </TextWrap>
       <Title onClick={handleButtonClick}>
-        <Subtitle>Notion으로 자세히보기</Subtitle>
-        <ArrowIcon>
-          <ChevronForwardOutline color={"white"} height="25px" width="25px" />
-        </ArrowIcon>
+        <h2>{title}</h2>
+        <TextWrap>
+          <Subtitle>Notion으로 자세히보기</Subtitle>
+          <ArrowIcon>
+            <ChevronForwardOutline color={"gray"} height="25px" width="25px" />
+          </ArrowIcon>
+        </TextWrap>
       </Title>
     </Item>
   );

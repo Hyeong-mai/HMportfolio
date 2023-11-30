@@ -38,24 +38,31 @@ const MenuItem = styled.button`
   }
 `;
 
-const Menu = ({ menuItem, setMenuItem }) => {
+const Menu = ({ setMenuToggle, menuToggle, menuItem, setMenuItem }) => {
+  const handleMenuItemClick = (item) => {
+    setMenuItem(item); // 선택된 메뉴 아이템 설정
+    if (menuToggle) {
+      // 만약 팝업이 켜져 있다면
+      setMenuToggle(false); // 팝업 닫기
+    }
+  };
   return (
     <MenuStyle>
       <MenuItem
-        onClick={() => setMenuItem("home")}
-        isActive={menuItem === "home"} // 현재 선택된 메뉴와 비교
+        onClick={() => handleMenuItemClick("home")}
+        isActive={menuItem === "home"}
       >
         <h4>Home</h4>
       </MenuItem>
       <MenuItem
-        onClick={() => setMenuItem("about")}
-        isActive={menuItem === "about"} // 현재 선택된 메뉴와 비교
+        onClick={() => handleMenuItemClick("about")}
+        isActive={menuItem === "about"}
       >
         <h4>About</h4>
       </MenuItem>
       <MenuItem
-        onClick={() => setMenuItem("project")}
-        isActive={menuItem === "project"} // 현재 선택된 메뉴와 비교
+        onClick={() => handleMenuItemClick("project")}
+        isActive={menuItem === "project"}
       >
         <h4>Project</h4>
       </MenuItem>
