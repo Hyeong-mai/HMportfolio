@@ -109,11 +109,10 @@ const ProjectContents = () => {
             {/* <Row> */}
             <ProjectItem
               link={
-                "https://cute-apogee-96e.notion.site/DAM-map-f13cddee5185425aab0cd991ca3fa54f?pvs=4"
+                "https://cute-apogee-96e.notion.site/f13cddee5185425aab0cd991ca3fa54f?pvs=4"
               }
-              url={""}
               imgSrc={"image/next-carrot.png"}
-              title={"먹 DAM map"}
+              title={"당근 마켓"}
             />
             <ProjectItem
               link={

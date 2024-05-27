@@ -128,17 +128,20 @@ const AboutContents = () => {
         <Animated5>
           <h3>_Basic</h3>
           <UlStyle>
+            <LiStyle>TypeScript</LiStyle>
             <LiStyle>JavaScript</LiStyle>
             <LiStyle>HTML5</LiStyle>
             <LiStyle>CSS3</LiStyle>
           </UlStyle>
         </Animated5>
         <Animated6>
-          <h3>_Library</h3>
+          <h3>_Library_FrameWork</h3>
           <UlStyle>
             <LiStyle>React</LiStyle>
             <LiStyle>React-Native</LiStyle>
+            <LiStyle>Next</LiStyle>
             <LiStyle>Style-Components</LiStyle>
+            <LiStyle>TailWind</LiStyle>
           </UlStyle>
         </Animated6>
         <Animated7>
@@ -146,7 +149,7 @@ const AboutContents = () => {
           <UlStyle>
             <LiStyle>FireBase</LiStyle>
             <LiStyle>GraphQL</LiStyle>
-            <LiStyle>CSS3</LiStyle>
+            <LiStyle>Prisma</LiStyle>
           </UlStyle>
         </Animated7>
       </FrontEnd>

@@ -93,7 +93,7 @@ const TextWrap = styled.div`
   justify-content: center;
   flex-direction: row;
 `;
-const ProjectItem = ({ imgSrc, title, link, url }) => {
+const ProjectItem = ({ imgSrc, title, link }) => {
   const handleButtonClick = () => {
     window.open(link, "_blank");
   };
