@@ -19,7 +19,7 @@ const Item = styled.div`
   justify-content: center;
   width: 45%;
   height: 90%;
-  background-color: black;
+  background-color: blue;
   background-image: url(${(props) => props.imgSrc});
   background-size: cover;
   background-position: center;
@@ -48,7 +48,6 @@ const Item = styled.div`
     margin-bottom: 50px;
   }
 `;
-
 const Title = styled.button`
   height: 40%;
   border: none;
@@ -94,7 +93,7 @@ const TextWrap = styled.div`
   justify-content: center;
   flex-direction: row;
 `;
-const ProjectItem = ({ imgSrc, title, link }) => {
+const ProjectItem = ({ imgSrc, title, link, url }) => {
   const handleButtonClick = () => {
     window.open(link, "_blank");
   };
