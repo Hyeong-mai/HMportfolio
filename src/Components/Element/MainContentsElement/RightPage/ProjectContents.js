@@ -123,6 +123,24 @@ const ProjectContents = () => {
             />
             {/* </Row> */}
           </Animated2>
+          <Animated2>
+            {/* <Row> */}
+            <ProjectItem
+              link={
+                "https://cute-apogee-96e.notion.site/DAM-map-f13cddee5185425aab0cd991ca3fa54f?pvs=4"
+              }
+              imgSrc={"image/map.png"}
+              title={"먹 DAM map"}
+            />
+            <ProjectItem
+              link={
+                "https://cute-apogee-96e.notion.site/DAM-sns-8928e1f702084385a25cd12d7b70ea56?pvs=4"
+              }
+              imgSrc={"image/sns.png"}
+              title={"먹 DAM sns"}
+            />
+            {/* </Row> */}
+          </Animated2>
           <Animated3>
             {/* <Row> */}
             <ProjectItem
