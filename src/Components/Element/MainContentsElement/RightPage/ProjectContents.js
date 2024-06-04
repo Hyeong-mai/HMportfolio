@@ -114,12 +114,13 @@ const ProjectContents = () => {
               imgSrc={"image/next-carrot.png"}
               title={"당근 마켓"}
             />
+            {/* <Row> */}
             <ProjectItem
               link={
-                "https://cute-apogee-96e.notion.site/DAM-sns-8928e1f702084385a25cd12d7b70ea56?pvs=4"
+                "https://cute-apogee-96e.notion.site/Portfolio-dd9ec006c2b14211b93ee8fced336873?pvs=4"
               }
-              imgSrc={"image/next-carrot.png"}
-              title={"먹 DAM sns"}
+              imgSrc={"image/portfolio.png"}
+              title={"나의 포트폴리오"}
             />
             {/* </Row> */}
           </Animated2>
@@ -159,17 +160,7 @@ const ProjectContents = () => {
             />
             {/* </Row> */}
           </Animated3>
-          <Animated4>
-            {/* <Row> */}
-            <ProjectItem
-              link={
-                "https://cute-apogee-96e.notion.site/Portfolio-dd9ec006c2b14211b93ee8fced336873?pvs=4"
-              }
-              imgSrc={"image/portfolio.png"}
-              title={"나의 포트폴리오"}
-            />
-            {/* </Row> */}
-          </Animated4>
+          <Animated4></Animated4>
         </ProjectList>
       </ProjectSection>
     </ContentsStyle>
