@@ -128,7 +128,7 @@ const ProjectContents = () => {
             {/* <Row> */}
             <ProjectItem
               link={
-                "https://cute-apogee-96e.notion.site/DAM-map-f13cddee5185425aab0cd991ca3fa54f?pvs=4"
+                "https://cute-apogee-96e.notion.site/DAM-map-71e0f3e997a44270afc8ad1c817e4f2d?pvs=4"
               }
               imgSrc={"image/map.png"}
               title={"먹 DAM map"}
@@ -160,7 +160,7 @@ const ProjectContents = () => {
             />
             {/* </Row> */}
           </Animated3>
-          <Animated4></Animated4>
+          {/* <Animated4></Animated4> */}
         </ProjectList>
       </ProjectSection>
     </ContentsStyle>
