@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
-import Title from "./AboutElement/Title";
-import ProjectItem from "./ProjectElement/ProjectItem";
+import ProjectContainer from "./ProjectElement/ProjectList";
 
 const fadeIn = keyframes`
-   from {
+  from {
     opacity: 0;
     transform: translateY(-50px);
   }
@@ -13,157 +12,119 @@ const fadeIn = keyframes`
     transform: translateY(0);
   }
 `;
-const AnimatedBase = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 350px;
-  opacity: 0;
-  animation: ${fadeIn} 0.3s ease-out forwards;
-
-  // 화면 크기가 작을 때 스타일 변경
-  @media (max-width: 598px) {
-    flex-direction: column;
-    height: 350px;
-  }
-`;
-const Animated1 = styled.div`
-  opacity: 0;
-  animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남 // 애니메이션으로 나타남
-`;
-const Animated2 = styled(AnimatedBase)`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 350px;
-  opacity: 0;
-  animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남
-  animation-delay: 0.6s;
-  @media (max-width: 598px) {
-    height: 700px;
-  }
-`;
-const Animated3 = styled(AnimatedBase)`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 350px;
-  opacity: 0;
-  animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남
-  animation-delay: 0.9s;
-  @media (max-width: 768px) {
-    height: 700px;
-  }
-`;
-const Animated4 = styled(AnimatedBase)`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 350px;
-  opacity: 0;
-  animation: ${fadeIn} 0.3s ease-out forwards; // 애니메이션으로 나타남
-  animation-delay: 1.2s;
-`;
 
 const ContentsStyle = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   overflow: scroll;
+  animation: ${fadeIn} 1s ease-in-out;
+  @media (max-width: 1208px) {
+    align-items: unset;
+  }
 `;
+
 const ProjectSection = styled.div`
-  padding-top: 50px;
-  width: 80%;
-`;
-const ProjectList = styled.div`
-  width: 100%;
+  width: 90%;
+  height: 90%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+
   justify-content: center;
-  margin-bottom: 50px;
+  @media (max-width: 1208px) {
+    height: 180%;
+  }
 `;
-// const Row = styled.div`
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   width: 100%;
-//   height: 350px;
-// `;
+
+const ProjectMenu = styled.button`
+  background-color: rgba(237, 237, 237);
+  padding: 20px;
+  height: 100%;
+  border-style: none;
+  font-size: ${(props) => (props.isActive ? "18px" : "14px")};
+  color: ${(props) => (props.isActive ? "black" : "gray")};
+
+  transition: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    font-size: 18px;
+    transition: 0.5s;
+    color: black;
+  }
+  @media (max-width: 1208px) {
+    padding: 10px;
+  }
+`;
+
+const MenuBar = styled.div`
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  position: relative;
+  @media (max-width: 1208px) {
+    height: 5%;
+  }
+`;
+
+const UnderLine = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  z-index: -1;
+`;
 
 const ProjectContents = () => {
+  const [menuItem, setMenuItem] = useState("project1");
+
+  const handleMenuItemClick = (item) => {
+    setMenuItem(item); // 선택된 메뉴 아이템 설정
+  };
+
   return (
     <ContentsStyle>
       <ProjectSection>
-        <Animated1>
-          <Title text={"PROJECT"}></Title>
-        </Animated1>
-        <ProjectList>
-          <Animated2>
-            {/* <Row> */}
-            <ProjectItem
-              link={
-                "https://cute-apogee-96e.notion.site/f13cddee5185425aab0cd991ca3fa54f?pvs=4"
-              }
-              imgSrc={"image/next-carrot.png"}
-              title={"당근 마켓"}
-            />
-            {/* <Row> */}
-            <ProjectItem
-              link={
-                "https://cute-apogee-96e.notion.site/Portfolio-dd9ec006c2b14211b93ee8fced336873?pvs=4"
-              }
-              imgSrc={"image/portfolio.png"}
-              title={"나의 포트폴리오"}
-            />
-            {/* </Row> */}
-          </Animated2>
-          <Animated2>
-            {/* <Row> */}
-            <ProjectItem
-              link={
-                "https://cute-apogee-96e.notion.site/DAM-map-71e0f3e997a44270afc8ad1c817e4f2d?pvs=4"
-              }
-              imgSrc={"image/map.png"}
-              title={"먹 DAM map"}
-            />
-            <ProjectItem
-              link={
-                "https://cute-apogee-96e.notion.site/DAM-sns-8928e1f702084385a25cd12d7b70ea56?pvs=4"
-              }
-              imgSrc={"image/sns.png"}
-              title={"먹 DAM sns"}
-            />
-            {/* </Row> */}
-          </Animated2>
-          <Animated3>
-            {/* <Row> */}
-            <ProjectItem
-              link={
-                "https://cute-apogee-96e.notion.site/CafeDam-App-ef1200128e1a49ad95eed16c261d6f33?pvs=4"
-              }
-              imgSrc={"image/cafeDam.png"}
-              title={"CafeDam App"}
-            />
-            <ProjectItem
-              link={
-                "https://cute-apogee-96e.notion.site/Kosta-6c1cacb401934b2e9308cd1054976b71?pvs=4"
-              }
-              imgSrc={"image/kosta.png"}
-              title={"Kosta 경매 사이트"}
-            />
-            {/* </Row> */}
-          </Animated3>
-          {/* <Animated4></Animated4> */}
-        </ProjectList>
+        <MenuBar>
+          <UnderLine />
+          <ProjectMenu
+            onClick={() => handleMenuItemClick("project1")}
+            isActive={menuItem === "project1"}
+          >
+            Project 1
+          </ProjectMenu>
+          <ProjectMenu
+            onClick={() => handleMenuItemClick("project2")}
+            isActive={menuItem === "project2"}
+          >
+            Project 2
+          </ProjectMenu>
+          <ProjectMenu
+            onClick={() => handleMenuItemClick("project3")}
+            isActive={menuItem === "project3"}
+          >
+            Project 3
+          </ProjectMenu>
+          <ProjectMenu
+            onClick={() => handleMenuItemClick("project4")}
+            isActive={menuItem === "project4"}
+          >
+            Project 4
+          </ProjectMenu>
+        </MenuBar>
+        {menuItem === "project1" && <ProjectContainer title={"project1"} />}
+        {menuItem === "project2" && <ProjectContainer title={"project2"} />}
+        {menuItem === "project3" && <ProjectContainer title={"project3"} />}
+        {menuItem === "project4" && <ProjectContainer title={"project4"} />}
       </ProjectSection>
     </ContentsStyle>
   );
 };
+
 export default ProjectContents;

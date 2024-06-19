@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const LeftContentsStyle = styled.div`
-  width: 45%;
+  width: 50%;
   background-color: black;
   align-items: center;
   justify-content: center;
@@ -15,13 +15,13 @@ const LeftContentsStyle = styled.div`
   }
 `;
 const Image = styled.img`
-  width: 110%;
+  width: 100%;
 `;
 
 const LeftContents = () => {
   return (
     <LeftContentsStyle>
-      <Image src="image/IMG_4652.JPG"></Image>
+      <Image src="image/IMG_3521.PNG"></Image>
     </LeftContentsStyle>
   );
 };

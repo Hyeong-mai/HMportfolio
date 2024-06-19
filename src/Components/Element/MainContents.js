@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import LeftContents from "./MainContentsElement/LeftContents";
 import RightContents from "./MainContentsElement/RightContents";
 import styled from "styled-components";
@@ -20,8 +20,13 @@ const MainContentsStyle = styled.div`
 const MainContents = ({ setMenuToggle, menuToggle, menuItem, setMenuItem }) => {
   return (
     <MainContentsStyle>
-      <LeftContents />
-      <RightContents setMenuItem={setMenuItem} menuItem={menuItem} />
+      {menuItem === "project" ? null : <LeftContents />}
+
+      <RightContents
+        setMenuItem={setMenuItem}
+        menuItem={menuItem}
+        setMenuToggle={setMenuToggle}
+      />
       <PopUp
         setMenuToggle={setMenuToggle}
         menuToggle={menuToggle}
