@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import LeftContents from "./MainContentsElement/LeftContents";
 import RightContents from "./MainContentsElement/RightContents";
 import styled from "styled-components";
