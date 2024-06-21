@@ -10,6 +10,7 @@ const MainCon = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  animation: ${fadeIn} 1s ease-in-out;
   @media (max-width: 1208px) {
     flex-direction: column;
     height: 100%;
