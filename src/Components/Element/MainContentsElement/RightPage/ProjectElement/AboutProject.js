@@ -21,7 +21,7 @@ const hexToRgba = (hex, alpha) => {
 const fadeIn = keyframes`from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); };`;
 
 const Container = styled.div`
-  width: 30%;
+  width: 40%;
   height: 100%;
   border-radius: 8px;
   display: flex;
@@ -164,7 +164,7 @@ const AboutProject = ({ title }) => {
             <Url
               href={`https://again-shop-git-main-hyeongmins-projects-ca960665.vercel.app/home`}
             >
-              홈페이지로 이동하기
+              홈페이지로 가기
             </Url>
           )}
         </Title>

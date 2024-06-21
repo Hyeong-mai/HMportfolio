@@ -26,7 +26,7 @@ const ProjectList = styled.div`
   }
 `;
 const ScrollArea = styled.div`
-  width: 70%;
+  width: 60%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -79,6 +79,10 @@ const MiniPhoneFrame = styled.div`
   }
   @media (max-width: 1208px) {
     width: 20%;
+    max-width: 60px;
+  }
+  @media (max-width: 400px) {
+    width: 15%;
     max-width: 60px;
   }
 `;
