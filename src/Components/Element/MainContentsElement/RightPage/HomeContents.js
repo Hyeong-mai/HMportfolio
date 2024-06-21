@@ -115,7 +115,7 @@ const Right = styled.div`
   justify-content: center;
 `;
 const PointText = styled.h1`
-  color: rgba(22, 73, 184);
+  color: #ff5500;
 `;
 
 const TEXTS = ["Patience", "Passion", "User-centered"];

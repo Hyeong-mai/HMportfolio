@@ -6,7 +6,7 @@ const LogoStyle = styled.a`
   color: black;
 `;
 const Point = styled.a`
-  color: rgba(22, 73, 184);
+  color: #ff5500;
 `;
 const Logo = () => {
   return (

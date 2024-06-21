@@ -36,6 +36,8 @@ const PhoneFrame = styled.div`
   width: 50%;
   height: 90%;
   border: 3px solid black;
+  background-color: white;
+  overflow: hidden;
   color: black;
   display: flex;
   align-items: center;
@@ -55,12 +57,18 @@ const AboutFrame = styled.div`
   color: black;
   justify-content: center;
 `;
+const Image = styled.img`
+  width: 100%;
+`;
 
-const MainFrame = ({ title }) => {
+const MainFrame = ({ index, title }) => {
+  console.log(`image/${title}/image${index}.PNG`);
   return (
     <MainCon>
       <PhoneFrameWrap>
-        <PhoneFrame>{title}</PhoneFrame>
+        <PhoneFrame>
+          <Image src={`image/${title}/image${index}.PNG`} />
+        </PhoneFrame>
       </PhoneFrameWrap>
       <AboutFrameWrap>
         <AboutFrame>Description</AboutFrame>

@@ -20,7 +20,7 @@ const ContentsStyle = styled.div`
   justify-content: center;
   align-items: center;
   overflow: scroll;
-  animation: ${fadeIn} 1s ease-in-out;
+
   @media (max-width: 1208px) {
     align-items: unset;
   }
@@ -32,8 +32,6 @@ const ProjectSection = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-
-  justify-content: center;
   @media (max-width: 1208px) {
     height: 180%;
   }
@@ -45,15 +43,17 @@ const ProjectMenu = styled.button`
   height: 100%;
   border-style: none;
   font-size: ${(props) => (props.isActive ? "18px" : "14px")};
-  color: ${(props) => (props.isActive ? "black" : "gray")};
+  color: ${(props) => (props.isActive ? "#ff5500" : "gray")};
 
+  font-weight: ${(props) => (props.isActive ? "600" : "normal")};
   transition: 0.5s;
   cursor: pointer;
 
   &:hover {
     font-size: 18px;
     transition: 0.5s;
-    color: black;
+    font-weight: 600;
+    color: #ff5500;
   }
   @media (max-width: 1208px) {
     padding: 10px;
@@ -66,7 +66,7 @@ const MenuBar = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-
+  animation: ${fadeIn} 1s ease-in-out;
   position: relative;
   @media (max-width: 1208px) {
     height: 5%;
@@ -97,31 +97,31 @@ const ProjectContents = () => {
             onClick={() => handleMenuItemClick("project1")}
             isActive={menuItem === "project1"}
           >
-            Project 1
+            Again Market
           </ProjectMenu>
           <ProjectMenu
             onClick={() => handleMenuItemClick("project2")}
             isActive={menuItem === "project2"}
           >
-            Project 2
+            Eat Dam
           </ProjectMenu>
           <ProjectMenu
             onClick={() => handleMenuItemClick("project3")}
             isActive={menuItem === "project3"}
           >
-            Project 3
+            Cafe Dam
           </ProjectMenu>
-          <ProjectMenu
+          {/* <ProjectMenu
             onClick={() => handleMenuItemClick("project4")}
             isActive={menuItem === "project4"}
           >
-            Project 4
-          </ProjectMenu>
+            Again Market
+          </ProjectMenu> */}
         </MenuBar>
         {menuItem === "project1" && <ProjectContainer title={"project1"} />}
         {menuItem === "project2" && <ProjectContainer title={"project2"} />}
         {menuItem === "project3" && <ProjectContainer title={"project3"} />}
-        {menuItem === "project4" && <ProjectContainer title={"project4"} />}
+        {/* {menuItem === "project4" && <ProjectContainer title={"project4"} />} */}
       </ProjectSection>
     </ContentsStyle>
   );
