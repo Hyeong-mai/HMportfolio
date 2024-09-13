@@ -1,5 +1,4 @@
 import React from "react";
-import { ChevronForward } from "react-ionicons";
 import styled from "styled-components";
 
 // ProjectCard 스타일 컴포넌트

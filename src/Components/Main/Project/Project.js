@@ -3,7 +3,6 @@ import styled, { keyframes } from "styled-components";
 import ProjectEducation from "./ProjectElement/ProjectEducation";
 import ProjectCard from "./ProjectElement/ProjectComponents/ProjectCard";
 import ProjectMenu from "./ProjectElement/ProjectComponents/ProjectMenu";
-import { Close, Language } from "react-ionicons";
 import SelectModal from "./ProjectElement/ProjectComponents/SelectModal";
 
 // 프로젝트 리스트 레이아웃

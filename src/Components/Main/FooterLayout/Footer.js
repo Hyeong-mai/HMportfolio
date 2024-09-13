@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { LogoGithub } from "react-ionicons";
 import styled, { keyframes } from "styled-components";
 
 // 페이드 인 애니메이션 정의

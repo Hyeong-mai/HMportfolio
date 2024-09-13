@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import styled, { keyframes } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import AboutMe from "./About/AboutMe";
 import Project from "./Project/Project";
 import Footer from "./FooterLayout/Footer";
