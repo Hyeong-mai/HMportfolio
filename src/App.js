@@ -28,7 +28,7 @@ const Layout = styled.div`
     height: 800vh;
   }
   @media (max-width: 430px) {
-    height: 850vh;
+    height: 950vh;
   }
 `;
 

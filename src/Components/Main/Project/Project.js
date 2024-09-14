@@ -67,6 +67,9 @@ const ProjectLayout = styled.div`
   @media (max-width: 1050px) {
     height: 350vh;
   }
+  @media (max-width: 430px) {
+    height: 400vh;
+  }
 `;
 
 // 메뉴 바

@@ -31,7 +31,7 @@ const AboutMeLayout = styled.div`
     height: 250vh;
   }
   @media (max-width: 430px) {
-    height: 300vh;
+    height: 350vh;
   }
 `;
 
