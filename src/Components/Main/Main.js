@@ -16,6 +16,10 @@ const Container = styled.div`
   @media (max-width: 1160px) {
     height: 800vh;
   }
+  @media (max-width: 430px) {
+    height: 850vh;
+  }
+  overflow: hidden;
 `;
 
 const Main = () => {

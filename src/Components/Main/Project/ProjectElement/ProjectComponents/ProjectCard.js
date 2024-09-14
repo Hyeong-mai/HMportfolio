@@ -25,6 +25,7 @@ const Top = styled.div`
   height: 45%;
   background-color: white;
   border-radius: 4px 4px 0px 0px;
+  overflow: hidden;
 `;
 
 const Bottom = styled.div`

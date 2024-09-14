@@ -27,6 +27,9 @@ const Layout = styled.div`
   @media (max-width: 1160px) {
     height: 800vh;
   }
+  @media (max-width: 430px) {
+    height: 850vh;
+  }
 `;
 
 // 버튼 컨테이너 스타일 (display: flex, column)

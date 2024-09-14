@@ -40,14 +40,7 @@ const projects = [
       "styled-components, Prisma 등을 이용해 개발 생산성 극대화",
       "netlify 이용한 배포",
     ],
-    skills: [
-      "React-Native",
-      "Apollo",
-      "Prisma",
-      "styled-components",
-      "Expo",
-      "AWS",
-    ],
+    skills: ["React-Native", "Apollo", "Prisma", "Expo", "AWS"],
   },
   {
     id: 3,

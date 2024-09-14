@@ -31,6 +31,9 @@ const BigLogo = styled.p`
   @media (max-width: 1440px) {
     font-size: 6em;
   }
+  @media (max-width: 430px) {
+    font-size: 3em;
+  }
 `;
 
 const Logo = styled.p`

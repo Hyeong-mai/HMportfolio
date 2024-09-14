@@ -29,15 +29,17 @@ const BoldTitle = styled.p`
   margin: 0;
   font-size: 20px;
   font-weight: bold;
+  @media (max-width: 430px) {
+    font-size: 16px;
+  }
 `;
 
 const BoldText = styled.p`
   font-weight: bold;
   background-color: orange; /* 배경색 설정 */
-  padding: 5px 5px; /* 여백 추가 */
+  padding: 3px 3px; /* 여백 추가 */
   margin: 0px 5px;
   border-radius: 5px; /* 모서리 둥글게 */
-  white-space: nowrap; /* 줄바꿈 방지 */
   display: inline; /* 너비가 컨텐츠에 맞게 조절되도록 설정 */
 `;
 
@@ -47,6 +49,10 @@ const SmallText = styled.p`
   font-size: 16px;
   font-weight: 300;
   line-height: 1.7; /* 줄 간격 설정 */
+  width: 100%;
+  @media (max-width: 430px) {
+    font-size: 14px;
+  }
 `;
 
 const AboutInterview = () => {
@@ -81,12 +87,10 @@ const AboutInterview = () => {
       <InterviewCon>
         <BoldTitle>Q. 자기계발을 위해 어떤 것들을 해왔는지?</BoldTitle>
         <SmallText>
-          <BoldText>
-            "처음이니 당연히 어려운 것이다 언제든지 물어보고 소통해 나가면
-            발전하는 개발자가 될 수 있다"
-          </BoldText>
-          라는 마인드로, 각종 매체를 통해 독학하며 부족한 부분은 현업자에게
-          끈질기게 질문해왔습니다. 이를 통해 다양한 프로젝트에 도전하며
+          "처음이니 당연히 어려운 것이다 언제든지 물어보고 소통해 나가면
+          발전하는 개발자가 될 수 있다" 라는 마인드로, 각종 매체를 통해 독학하며
+          부족한 부분은 현업자에게 <BoldText>끈질기게</BoldText> 질문해왔습니다.
+          이를 통해 다양한 프로젝트에 <BoldText>도전하며</BoldText>도전하며
           지속적으로 성장해왔습니다."
         </SmallText>
       </InterviewCon>

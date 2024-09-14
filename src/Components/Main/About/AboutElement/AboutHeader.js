@@ -8,7 +8,11 @@ const AboutHeaderLayout = styled.div`
   align-items: center;
 `;
 
-const Title = styled.h2``;
+const Title = styled.h2`
+  @media (max-width: 430px) {
+    font-size: 34px;
+  }
+`;
 
 const AboutHeader = () => {
   return (

@@ -30,6 +30,9 @@ const AboutMeLayout = styled.div`
     font-size: 2.5em;
     height: 250vh;
   }
+  @media (max-width: 430px) {
+    height: 300vh;
+  }
 `;
 
 const ContentsLayout = styled.div`

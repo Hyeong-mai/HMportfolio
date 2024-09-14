@@ -353,6 +353,10 @@ const CoverImageWrap = styled.div`
     width: 450px;
     height: 250px;
   }
+  @media (max-width: 430px) {
+    width: 300px;
+    height: 170px;
+  }
 `;
 
 const Modal = ({ image, onClose }) => (

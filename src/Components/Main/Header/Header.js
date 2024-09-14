@@ -88,15 +88,14 @@ const Logo = styled.p`
     font-size: 1em; /* 더 작은 화면에서는 더 작게 */
   }
 `;
-const BoldText = styled.p`
-  font-weight: bold;
-`;
 
 const Etc = styled.p`
   font-size: 1em;
   margin: 0;
-  display: flex;
-  gap: 5px;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  gap: 5px; */
   opacity: 0;
   animation: ${fadeInUp} 1s ease-in-out forwards 2.5s; /* Logo 후에 나타남 */
   @media (max-width: 880px) {
@@ -159,7 +158,9 @@ const ChevronWrapper = styled.div`
   animation: ${bounceAnimation} 2s infinite; /* 지속적인 bounce 애니메이션 */
   cursor: pointer;
 `;
-
+const BoldText = styled.span`
+  font-weight: bold;
+`;
 const ImageWrap = styled.div`
   animation: ${backgroundFadeIn} 1s ease-in-out forwards 2.5s;
   opacity: 0;
@@ -174,6 +175,9 @@ const ImageWrap = styled.div`
   @media (max-width: 880px) {
     right: 0px;
   }
+  @media (max-width: 430px) {
+    right: -100px;
+  }
 `;
 const MainImageIcon = styled.img`
   scale: 0.8;
@@ -187,8 +191,10 @@ const Header = () => {
           프론트엔드 개발자 <BoldText>김형민</BoldText>입니다.
         </Logo>
         <Etc>
-          새로운 <BoldText>도전</BoldText>을 두려워하지 않으며, 매일 더 나은
-          개발자가 되기 위해<BoldText>끊임없이</BoldText> 노력하고 있습니다
+          새로운 <BoldText>도전</BoldText>을 두려워하지 않으며,
+          <br />
+          매일 더 나은 개발자가 되기 위해<BoldText>끊임없이</BoldText> 노력하고
+          있습니다
         </Etc>
       </LogoWrap>
       <ImageWrap>

@@ -51,6 +51,9 @@ const Bottom = styled.div`
   @media (max-width: 1660px) {
     grid-template-columns: repeat(4, 1fr); /* 3개의 열 */
   }
+  @media (max-width: 430px) {
+    grid-template-columns: repeat(3, 1fr); /* 3개의 열 */
+  }
 `;
 
 // 랜덤 파스텔 색상 생성 함수
@@ -70,6 +73,14 @@ const ToolItem = styled.div`
   font-weight: bold;
   color: ${getRandomPastelColor};
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  @media (max-width: 430px) {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+  @media (max-width: 390px) {
+    padding: 3px;
+    font-size: 0.7rem;
+  }
 `;
 const EducationItem = ({ project }) => {
   return (

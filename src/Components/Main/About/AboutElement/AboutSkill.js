@@ -75,6 +75,9 @@ const ToolItem = styled.div`
   font-weight: bold;
   color: ${getRandomPastelColor};
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  @media (max-width: 430px) {
+    font-size: 0.7rem;
+  }
 `;
 
 const AboutSkill = () => {
