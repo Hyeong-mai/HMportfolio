@@ -68,7 +68,7 @@ const ProjectLayout = styled.div`
     height: 350vh;
   }
   @media (max-width: 430px) {
-    height: 400vh;
+    height: 450vh;
   }
 `;
 
@@ -113,6 +113,9 @@ const ContentItem = styled.div`
   color: white;
   animation: ${(props) => (props.visible ? fadeIn : fadeOut)} 1s forwards;
   @media (max-width: 1160px) {
+    height: ${(props) => (props.isSecond ? "200vh" : "150vh")};
+  }
+  @media (max-width: 430px) {
     height: ${(props) => (props.isSecond ? "250vh" : "200vh")};
   }
 `;
