@@ -620,21 +620,23 @@ const SelectModal = ({ selectedProject, setSelectedProject }) => {
                     </>
                   ))}
               </ModalCon>
-              <ModalCon>
-                <ModalConTitle>💻 작업 화면</ModalConTitle>
-                <ModalImageSlide>
-                  {selectedProject.images &&
-                    selectedProject.images.map((img, index) => (
-                      <ImageBox
-                        key={index}
-                        onClick={() => handleImageClick(img.src)}
-                      >
-                        <Image src={img.src} alt={img.title} />
-                        <ImageTitle>{img.title}</ImageTitle>
-                      </ImageBox>
-                    ))}
-                </ModalImageSlide>
-              </ModalCon>
+              {selectedProject.images ? (
+                <ModalCon>
+                  <ModalConTitle>💻 작업 화면</ModalConTitle>
+                  <ModalImageSlide>
+                    {selectedProject.images &&
+                      selectedProject.images.map((img, index) => (
+                        <ImageBox
+                          key={index}
+                          onClick={() => handleImageClick(img.src)}
+                        >
+                          <Image src={img.src} alt={img.title} />
+                          <ImageTitle>{img.title}</ImageTitle>
+                        </ImageBox>
+                      ))}
+                  </ModalImageSlide>
+                </ModalCon>
+              ) : null}
             </ModalDetail>
           </ModalContent>
         </ModalBackground>
