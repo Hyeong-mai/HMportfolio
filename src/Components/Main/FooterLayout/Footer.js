@@ -137,7 +137,7 @@ const Footer = () => {
       </LogoWrap>
       <IconWrap>
         <IconWrapper
-          href="https://github.com"
+          href="https://github.com/Hyeong-mai"
           target="_blank"
           rel="noopener noreferrer"
           visible={isScrolledToBottom}
@@ -145,7 +145,7 @@ const Footer = () => {
           Github
         </IconWrapper>
         <IconWrapper
-          href="https://notion.so"
+          href="https://cute-apogee-96e.notion.site/2782f58351f24b0ebe66d86cda1b028d"
           target="_blank"
           rel="noopener noreferrer"
           visible={isScrolledToBottom}

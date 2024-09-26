@@ -7,8 +7,8 @@ const ProjectEducationLayout = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2개의 열을 동일한 너비로 설정 */
-  align-items: center;
-  justify-items: center;
+  align-items: flex-start;
+  justify-items: flex-start;
   grid-auto-rows: 500px; // 고정된 높이
   @media (max-width: 1160px) {
     grid-template-columns: repeat(1, 1fr); /* 2개의 열을 동일한 너비로 설정 */
@@ -40,14 +40,13 @@ const projects = [
       "styled-components, Prisma 등을 이용해 개발 생산성 극대화",
       "netlify 이용한 배포",
     ],
-    skills: ["React-Native", "Apollo", "Prisma", "Expo", "AWS"],
+    skills: ["React", "Apollo", "Prisma", "Expo", "AWS"],
   },
   {
     id: 3,
     date: "2017.06 ~ 2017.12",
     BigTitle: "소프트웨어진흥협회",
-    SmallTitle:
-      "KOSTA 소프트웨어 보안을 위한 시큐어프로그래밍 개발자 양성 과정 ",
+    SmallTitle: `KOSTA 소프트웨어 보안을 위한 시큐어프로그래밍 개발자 양성 과정`,
     descriptions: [
       " 프론트엔드 개발자 교육과정 수료(6개월 과정),반응형 웹에 대한 이해 및 개선 경험,Git을 이용한 협업",
       " Spring Framework을 사용하는 이유와 목적에 대해 이해하고, RESTFul API를 구축",

@@ -35,6 +35,7 @@ const SmallTitle = styled.p`
   color: white;
   font-size: 18px;
   font-weight: bold;
+  width: 80%;
 `;
 const Ul = styled.ul`
   margin-left: 20px;

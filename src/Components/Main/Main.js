@@ -12,14 +12,10 @@ const Container = styled.div`
   width: 100%;
   flex-direction: column;
   position: relative;
-  height: 600vh; /* 6개의 섹션을 합한 높이 */
-  @media (max-width: 1160px) {
-    height: 800vh;
-  }
+  height: 800vh; /* 6개의 섹션을 합한 높이 */
   @media (max-width: 430px) {
     height: 1000vh;
   }
-  overflow: hidden;
 `;
 
 const Main = () => {

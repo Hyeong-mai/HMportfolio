@@ -18,7 +18,7 @@ const fadeIn = keyframes`
 `;
 
 const AboutMeLayout = styled.div`
-  height: 200vh; /* 각 섹션이 화면의 100% 높이를 차지 */
+  height: 250vh; /* 각 섹션이 화면의 100% 높이를 차지 */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -28,7 +28,6 @@ const AboutMeLayout = styled.div`
   background-color: #232323;
   @media (max-width: 1160px) {
     font-size: 2.5em;
-    height: 250vh;
   }
   @media (max-width: 430px) {
     height: 350vh;

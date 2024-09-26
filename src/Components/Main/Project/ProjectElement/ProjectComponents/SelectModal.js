@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Close } from "react-ionicons";
+import { FaGithub } from "react-icons/fa";
+import { Close, LinkOutline } from "react-ionicons";
 import styled from "styled-components";
 
 // 랜덤 파스텔 색상 생성
@@ -7,6 +8,54 @@ const getRandomPastelColor = () => {
   const hue = Math.floor(Math.random() * 360); // 0에서 360까지 랜덤한 색상 값
   return `hsl(${hue}, 100%, 85%)`; // HSL로 파스텔 톤 색상 생성
 };
+const LinkButton = styled.a`
+  position: fixed;
+  top: 120px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  font-size: 25px;
+  line-height: 0;
+
+  &:hover {
+    color: #f39c12; /* 호버 시 색상 변경 */
+  }
+  @media (max-width: 880px) {
+    top: 20px;
+    right: 70px;
+  }
+`;
+const GitHubButton = styled.a`
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  font-size: 25px;
+  line-height: 0;
+
+  &:hover {
+    color: #f39c12; /* 호버 시 색상 변경 */
+  }
+  @media (max-width: 880px) {
+    top: 20px;
+    right: 70px;
+  }
+`;
 
 // 툴 아이템
 const ToolItem = styled.div`
@@ -94,14 +143,14 @@ const AboutTitle = styled.h1`
 `;
 
 // 모달 리스트
-const ModalList = styled.ul`
+const ModalList = styled.div`
   width: 100%;
   padding-left: 20px;
 `;
 
 // 리스트 아이템
 const ListItem = styled.li`
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 5px;
 `;
 
@@ -161,7 +210,7 @@ const ModalBoxDetail = styled.div`
 
   overflow: hidden;
   max-height: ${({ isOpen }) =>
-    isOpen ? "500px" : "0px"}; /* 초기 값 0 설정 */
+    isOpen ? "700px" : "0px"}; /* 초기 값 0 설정 */
   padding: ${({ isOpen }) =>
     isOpen ? "15px" : "0px"}; /* padding도 상태에 따라 변경 */
 `;
@@ -331,8 +380,12 @@ const ModalHeader = styled.div`
       : color}; /* 커버 이미지가 있으면 그라데이션, 없으면 지정한 color 사용 */
 `;
 
-const BoldText = styled.p`
+const BoldText = styled.ul`
   font-weight: bold;
+  list-style: none;
+`;
+const Wrap = styled.div`
+  margin-bottom: 20px;
 `;
 const CoverImage = styled.img`
   width: 100%;
@@ -358,7 +411,27 @@ const CoverImageWrap = styled.div`
     height: 170px;
   }
 `;
+const CodeWrap = styled.div`
+  margin-top: 20px;
+`;
+const CodeBlock = styled.pre`
+  background-color: #282c34; /* 어두운 배경 */
+  padding: 10px; /* 약간의 패딩 추가 */
+  border-radius: 8px;
+  font-family: "Courier New", Courier, monospace; /* 고정 폭 폰트 */
+  overflow-y: auto; /* 세로 스크롤 허용 */
+  border: 1px solid #444; /* 테두리 추가 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+  color: #f8f8f2; /* 텍스트 색상 */
+  margin-top: 10px;
+  max-height: 200px; /* 최대 높이 설정 */
+`;
 
+const CodeText = styled.code`
+  color: #66d9ef; /* 코드 텍스트 색상 */
+  font-size: 14px; /* 텍스트 크기 조정 */
+  white-space: pre-wrap; /* 줄 바꿈 처리 */
+`;
 const Modal = ({ image, onClose }) => (
   <ImageModalBackground onClick={onClose}>
     <ImageModalContent onClick={(e) => e.stopPropagation()}>
@@ -403,6 +476,26 @@ const SelectModal = ({ selectedProject, setSelectedProject }) => {
           <CloseButton onClick={closeModal}>
             <Close color={"white"} />
           </CloseButton>
+          {selectedProject.githubLink ? (
+            <GitHubButton
+              href={selectedProject.githubLink} // GitHub 링크
+              target="_blank" // 새 탭에서 열기
+              rel="noopener noreferrer" // 보안상 안전한 링크
+            >
+              <FaGithub size={20} />
+            </GitHubButton>
+          ) : null}
+
+          {selectedProject.link ? (
+            <LinkButton
+              href={selectedProject.link} // GitHub 링크
+              target="_blank" // 새 탭에서 열기
+              rel="noopener noreferrer" // 보안상 안전한 링크
+            >
+              <LinkOutline />
+            </LinkButton>
+          ) : null}
+
           <ModalContent onClick={(e) => e.stopPropagation()}>
             <ModalHeader
               color={selectedProject.mainColor}
@@ -431,7 +524,7 @@ const SelectModal = ({ selectedProject, setSelectedProject }) => {
                 </SubTitle>
               </SubTitleWrap>
               <ModalAbout>
-                <AboutTitle>📍 주요 기능 및 특징</AboutTitle>
+                <AboutTitle>📍 특징</AboutTitle>
                 <ModalList>
                   {selectedProject.skills &&
                     selectedProject.skills.map((skill, index) => (
@@ -458,7 +551,7 @@ const SelectModal = ({ selectedProject, setSelectedProject }) => {
                   ))}
               </ModalCon>
               <ModalCon>
-                <ModalConTitle>✨ 작업 기여도</ModalConTitle>
+                <ModalConTitle>✨ 주요 기능</ModalConTitle>
                 {selectedProject.contribution &&
                   selectedProject.contribution.map((contribution, index) => (
                     <>
@@ -476,9 +569,15 @@ const SelectModal = ({ selectedProject, setSelectedProject }) => {
                           {contribution.contributionLi &&
                             contribution.contributionLi.map(
                               (contributionLi, index) => (
-                                <ListItem key={index}>
-                                  {contributionLi}
-                                </ListItem>
+                                <Wrap key={index}>
+                                  <BoldText>{contributionLi.title}</BoldText>
+                                  {contributionLi.ex &&
+                                    contributionLi.ex.map((p, index) => (
+                                      <>
+                                        <ListItem key={index}>{p}</ListItem>
+                                      </>
+                                    ))}
+                                </Wrap>
                               )
                             )}
                         </ModalList>
@@ -487,7 +586,10 @@ const SelectModal = ({ selectedProject, setSelectedProject }) => {
                   ))}
               </ModalCon>
               <ModalCon>
-                <ModalConTitle>💫 Trouble Shooting</ModalConTitle>
+                {selectedProject.Trouble ? (
+                  <ModalConTitle>💫 Trouble Shooting</ModalConTitle>
+                ) : null}
+
                 {selectedProject.Trouble &&
                   selectedProject.Trouble.map((Trouble, index) => (
                     <>
@@ -500,10 +602,18 @@ const SelectModal = ({ selectedProject, setSelectedProject }) => {
                         <ModalList>
                           {Trouble.TroubleLi &&
                             Trouble.TroubleLi.map((TroubleLi, index) => (
-                              <ListItem key={index}>
+                              <Wrap key={index}>
                                 <BoldText>{TroubleLi.title}</BoldText>
-                                {TroubleLi.ex}
-                              </ListItem>
+                                <ListItem>{TroubleLi.ex}</ListItem>
+                                {TroubleLi.code ? (
+                                  <CodeWrap>
+                                    <BoldText>관련코드</BoldText>
+                                    <CodeBlock>
+                                      <CodeText>{TroubleLi.code}</CodeText>
+                                    </CodeBlock>
+                                  </CodeWrap>
+                                ) : null}
+                              </Wrap>
                             ))}
                         </ModalList>
                       </ModalBoxDetail>

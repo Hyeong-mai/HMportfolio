@@ -8,7 +8,7 @@ const InterviewLayout = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   @media (max-width: 1160px) {
     height: 40%;
   }
@@ -17,7 +17,7 @@ const InterviewLayout = styled.div`
 const InterviewCon = styled.div`
   width: 90%;
   border-radius: 30px;
-  padding: 20px;
+  padding: 15px;
   background-color: #373737;
   display: flex;
   justify-content: center;
@@ -36,7 +36,7 @@ const BoldTitle = styled.p`
 
 const BoldText = styled.p`
   font-weight: bold;
-  background-color: orange; /* 배경색 설정 */
+  background-color: rgba(255, 165, 0, 0.5); /* 배경색 설정 */
   padding: 3px 3px; /* 여백 추가 */
   margin: 0px 5px;
   border-radius: 5px; /* 모서리 둥글게 */

@@ -23,10 +23,7 @@ const Layout = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  height: 600vh; /* 6개의 섹션을 합한 높이 */
-  @media (max-width: 1160px) {
-    height: 800vh;
-  }
+  height: 800vh;
   @media (max-width: 430px) {
     height: 1000vh;
   }
@@ -106,7 +103,7 @@ function App() {
 
   // 이메일 보내기
   const sendEmail = () => {
-    window.location.href = "mailto:your-email@example.com";
+    window.location.href = "mailto:toat1216@gmail.com";
   };
 
   return (

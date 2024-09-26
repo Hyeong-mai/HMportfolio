@@ -203,14 +203,14 @@ const Header = () => {
       {/* GitHub와 Notion 버튼을 묶는 Wrapper */}
       <ButtonWrapper>
         <IconWrapper
-          href="https://github.com"
+          href="https://github.com/Hyeong-mai"
           target="_blank"
           rel="noopener noreferrer"
         >
           Github
         </IconWrapper>
         <IconWrapper
-          href="https://notion.so"
+          href="https://cute-apogee-96e.notion.site/2782f58351f24b0ebe66d86cda1b028d"
           target="_blank"
           rel="noopener noreferrer"
         >
