@@ -3,8 +3,8 @@ export const projects = [
   {
     id: 4,
     coverImage: "/image/project4/Project4Cover.png",
-    githubLink: "https://github.com/Hyeong-mai/again-store",
-    link: "https://again-shop-git-main-hyeongmins-projects-ca960665.vercel.app/home",
+    githubLink: "https://github.com/Hyeong-mai/hingom_photopress",
+    link: null,
     mainColor: "#0081FF",
     name: "Photo Press",
     type: "team",
@@ -275,8 +275,8 @@ export const projects = [
   {
     id: 5,
     coverImage: "/image/project5/Project5Cover.png",
-    githubLink: "https://github.com/Hyeong-mai/prism_admin",
-    link: "https://prism-admin.vercel.app",
+    githubLink: "https://github.com/Hyeong-mai/hingom_prism_admin",
+    link: null,
     mainColor: "#423B7F",
     name: "Photo Press Admin",
     type: "team",
@@ -443,7 +443,7 @@ export const projects = [
   {
     id: 6,
     coverImage: "/image/project6/Project6Cover.png",
-    githubLink: "https://github.com/Hyeong-mai/iris-user",
+    githubLink: "https://github.com/Hyeong-mai/hingom_iris_user",
     link: null,
     mainColor: "#34C759",
     name: "IRIS User",
@@ -736,8 +736,8 @@ export const projects = [
   {
     id: 5,
     coverImage: "/image/project7/Project7Cover.png",
-    githubLink: "https://github.com/your-username/finf_app",
-    link: "https://finf-app.vercel.app",
+    githubLink: "https://github.com/Hyeong-mai/finf_project",
+    link: null,
     mainColor: "#00B4D8",
     name: "Finf",
     type: "personal",

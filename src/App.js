@@ -861,7 +861,7 @@ const App = () => {
       <Contact ref={contactRef} />
       <Footer isVisible={isFooterVisible}>
         <FooterLink
-          href="https://github.com/your-github"
+          href="https://github.com/Hyeong-mai"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -869,14 +869,14 @@ const App = () => {
           <FaGithub />
         </FooterLink>
         <FooterLink
-          href="https://linkedin.com/in/your-linkedin"
+          href="https://hmkportfolio.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
           <FaLinkedin />
         </FooterLink>
-        <FooterLink href="mailto:your.email@example.com" aria-label="Email">
+        <FooterLink href="mailto:toat1216@gmail.com" aria-label="Email">
           <FaEnvelope />
         </FooterLink>
       </Footer>

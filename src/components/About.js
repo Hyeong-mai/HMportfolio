@@ -2,15 +2,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import styled from "styled-components";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {
-  FaReact,
-  FaGitAlt,
-  FaNodeJs,
-  FaCode,
-  FaFigma,
-  FaDocker,
-  FaAws,
-} from "react-icons/fa";
+import { FaReact, FaGitAlt, FaCode } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -188,7 +180,6 @@ const TechDescription = styled.p`
 
 const About = () => {
   const containerRef = useRef(null);
-  const sectionsRef = useRef([]);
 
   useLayoutEffect(() => {
     const container = containerRef.current;
