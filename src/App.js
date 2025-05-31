@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import styled from "styled-components";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaFileAlt } from "react-icons/fa";
 import "./App.css";
 
 // 컴포넌트 import
@@ -201,7 +201,7 @@ const Footer = styled.footer`
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 20%;
+  padding: 0 2rem;
   height: 50px;
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
@@ -868,14 +868,7 @@ const App = () => {
         >
           <FaGithub />
         </FooterLink>
-        <FooterLink
-          href="https://hmkportfolio.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <FaLinkedin />
-        </FooterLink>
+
         <FooterLink href="mailto:toat1216@gmail.com" aria-label="Email">
           <FaEnvelope />
         </FooterLink>

@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import styled from "styled-components";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaEnvelope } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -176,22 +176,15 @@ const Contact = () => {
 
         <ContactLinks ref={linksRef}>
           <ContactLink
-            href="https://github.com/your-github"
+            href="https://github.com/Hyeong-mai"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
             GitHub
           </ContactLink>
-          <ContactLink
-            href="https://linkedin.com/in/your-linkedin"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin />
-            LinkedIn
-          </ContactLink>
-          <ContactLink href="mailto:your.email@example.com">
+
+          <ContactLink href="mailto:toat1216@gmail.com">
             <FaEnvelope />
             Email
           </ContactLink>
