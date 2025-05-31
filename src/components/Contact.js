@@ -60,14 +60,6 @@ const ThankYouText = styled.p`
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 `;
 
-const ContactTitle = styled.h3`
-  font-size: 2rem;
-  color: #00a8ff;
-  margin-bottom: 2rem;
-  font-weight: 600;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-`;
-
 const ContactLinks = styled.div`
   display: flex;
   justify-content: center;
