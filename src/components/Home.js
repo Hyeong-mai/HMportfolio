@@ -913,6 +913,18 @@ const Home = () => {
                 <BoldText>집요함</BoldText>이 저를 한 단계씩 끌어올리고
                 있습니다.
               </p>
+              <p>
+                <strong>Q. AI를 개발에 어떻게 활용하나요?</strong>
+                <br />
+                A. AI를 단발성으로 쓰지 않고, 직접 만든{" "}
+                <BoldText>개발 하네스</BoldText>에{" "}
+                <BoldText>세컨드 브레인</BoldText>을 접목해 AI가 제 코드 스타일과
+                프로젝트 맥락 위에서 동작하게 만들었습니다. 이 방식으로
+                씨케이앤비에서 자동 EM 시스템을 <BoldText>영업일 1.5일</BoldText>{" "}
+                만에 구축해 기술팀 최초의 매출 성과를 냈고, 사이드 프로젝트
+                ‘우클’을 약 <BoldText>2주</BoldText> 만에 완성했습니다. 지금은
+                이 AI 개발 프로세스를 팀 표준으로 내재화·고도화하고 있습니다.
+              </p>
             </InterviewText>
           </InterviewContent>
           <ProfileImage ref={profileRef}>
@@ -928,7 +940,29 @@ const Home = () => {
             <ExperienceBox className="education-box">
               <ExperienceBoxTitle>Experience</ExperienceBoxTitle>
               <ExperienceItem className="experience-item">
-                <ExperiencePeriod>2024.03 - 현재</ExperiencePeriod>
+                <ExperiencePeriod>2025.11 - 현재</ExperiencePeriod>
+                <ExperienceName>
+                  씨케이앤비(CK&amp;B) - Frontend Engineer / PM
+                </ExperienceName>
+                <ExperienceDescription>
+                  • 히든태그 커넥트(HIDDENTAG CONNECT) (정품 인증 QR 스캔 기반
+                  B2B 관제형 SaaS)
+                  <br />- 자동 EM 시스템 기획·구현: 트렌드 분석·브랜드
+                  추출·리포트 생성·자동 발송 자동화
+                  <br />- 영업일 1.5일 만에 개발, 약 2주 만에 영업자 1인 5개월치
+                  업무량 소화 → 기술팀 최초 매출 성과
+                  <br />- 신규 매출 기능 PM(프론트 메인, 백엔드·디자인 리드),
+                  6/24 개발 완료·7/1 배포
+                  <br />- AI 개발 하네스 + 세컨드 브레인 구축·접목으로 개발
+                  효율·유지보수 안정성 향상
+                  <br />
+                  <BoldText>React</BoldText> <BoldText>React Query</BoldText>{" "}
+                  <BoldText>Styled-components</BoldText>{" "}
+                  <BoldText>AI 하네스</BoldText>
+                </ExperienceDescription>
+              </ExperienceItem>
+              <ExperienceItem className="experience-item">
+                <ExperiencePeriod>2024.11 - 2025.05</ExperiencePeriod>
                 <ExperienceName>HINGOM - Frontend Developer</ExperienceName>
                 <ExperienceDescription>
                   • Photo Press (키오스크 연동 웹 기반 디자인 플랫폼)

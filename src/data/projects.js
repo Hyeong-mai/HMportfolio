@@ -1,6 +1,395 @@
 // 프로젝트 데이터
 export const projects = [
   {
+    id: 8,
+    coverImage: "/image/project8/Project8Cover.png",
+    githubLink: null,
+    link: null,
+    mainColor: "#4F46E5",
+    name: "히든태그 커넥트 (HIDDENTAG CONNECT)",
+    type: "team",
+    tag: ["팀", "브랜드 보호 SaaS", "정품 인증", "AI 분석", "PM", "회사 프로젝트"],
+    date: "2025.11 ~ 재직중 (신규 개발 2026.06 · 6/24 개발 완료, 7/1 배포)",
+    description:
+      "QR 스캔 기반 정품 인증 데이터로 브랜드를 보호하고 소비자 인사이트를 제공하는 B2B 관제형 SaaS입니다. ‘Scan to Connect, Connect to Value’ — 전 세계 스캔 관제부터 가품 제보, 소비자 인사이트, AI 리포트까지 제공합니다.",
+    subDescription:
+      "AI 개발 하네스와 세컨드 브레인을 활용해 신규 매출 기능을 단기간에 기획·개발했으며, 자동 EM 시스템으로 기술팀 최초의 직접 매출 성과를 냈습니다. (프론트엔드 메인 + PM)",
+    skills: [
+      "자동 EM(이메일 마케팅) 시스템 기획·구현 — 영업일 1.5일 만에 개발, 약 2주 만에 영업자 1인 5개월치 업무량 소화 → 기술팀 최초 매출",
+      "신규 매출 기능 프로젝트 PM 담당 — 프론트엔드 메인, 백엔드·디자이너 리드 (6/24 완료·7/1 배포)",
+      "통합 관제: 전 세계 스캔 지도(히트맵), 국가별 스캔량·월별 추이·성별/연령대 분석 시각화",
+      "가품 대응: 소비자 제보 센터(신고 내역·국가별 비율·CSV 내보내기), 이상 가격 탐지",
+      "소비자 인사이트(정품/가품 설문·응답자 프로필)·이벤트 효과 비교·프로모션(스캔/푸시) 분석",
+      "AI 리포트: 스캔·제보·인사이트 데이터를 AI가 요약해 핵심 발견·다음 행동을 제안",
+      "AI 개발 하네스 + 세컨드 브레인 구축·접목으로 개발 효율과 유지보수 안정성 향상",
+    ],
+    language: [
+      {
+        name: "React (React Query)",
+        languageDescription:
+          "React Query로 대규모 관제 데이터의 서버 상태를 효율적으로 관리하고, 캐싱·비동기 처리로 반응성 높은 관제 대시보드를 구현했습니다.",
+      },
+      {
+        name: "Styled-components",
+        languageDescription:
+          "컴포넌트 단위의 일관된 디자인 시스템을 구축해 재사용 가능한 관제 UI와 반응형 레이아웃을 빠르게 구현했습니다.",
+      },
+      {
+        name: "데이터 시각화 (지도·차트)",
+        languageDescription:
+          "전 세계 스캔을 지도 히트맵으로 표현하고, 추이(라인)·구성(도넛)·국가별(막대) 차트로 스캔·제보·설문 지표를 직관적으로 시각화했습니다.",
+      },
+      {
+        name: "AI (LLM) 리포트·인사이트",
+        languageDescription:
+          "스캔·제보·설문 데이터를 LLM으로 요약해 AI 리포트·소비자 인사이트·신고 인사이트를 생성하고, 브랜드별 자동 EM 리포트를 작성했습니다.",
+      },
+      {
+        name: "AI 개발 하네스 (Cursor / Claude)",
+        languageDescription:
+          "직접 구축한 AI 개발 하네스에 세컨드 브레인(지식 베이스)을 접목해, AI가 제 코드 스타일과 프로젝트 컨텍스트 위에서 동작하도록 만들었습니다. 이를 통해 자동 EM 시스템을 영업일 1.5일 만에 완성하는 등 개발 속도와 유지보수 안정성을 동시에 확보했습니다.",
+      },
+    ],
+    contribution: [
+      {
+        contributionTitle: "자동 EM(이메일 마케팅) 시스템 구축 — 기술팀 최초 매출",
+        contributionLi: [
+          {
+            title: "트렌드 분석 → 브랜드 추출 → 리포트 → 자동 발송 파이프라인",
+            ex: [
+              "트렌드 분석과 브랜드 추출을 자동화하고, 브랜드별 리포트를 생성해 담당자에게 자동으로 메일링하는 전 과정을 하나의 파이프라인으로 구현했습니다.",
+              "AI 개발 하네스를 활용해 영업일 1.5일 만에 개발을 완료했고, 도입 약 2주 만에 영업 담당자 1인 기준 5개월치 업무량을 소화하며 영업 리소스를 대폭 절감했습니다.",
+            ],
+          },
+          {
+            title: "매출로 이어진 기능 발굴",
+            ex: [
+              "단순 기능 개발을 넘어 실사용자가 필요로 하고 매출로 이어질 수 있는 기능을 기획 단계부터 주도하여, 기술팀 최초의 직접 매출 기여 사례를 만들었습니다.",
+            ],
+          },
+        ],
+      },
+      {
+        contributionTitle: "신규 매출 기능 프로젝트 PM",
+        contributionLi: [
+          {
+            title: "기획부터 배포까지 단기간 완주",
+            ex: [
+              "프론트엔드를 메인으로 하며 백엔드 개발자·디자이너와의 협업을 리드하여, 신규 위젯 플랫폼 기능을 6월 24일 개발 완료하고 7월 1일 배포했습니다.",
+            ],
+          },
+        ],
+      },
+      {
+        contributionTitle: "통합 관제 & 데이터 시각화",
+        contributionLi: [
+          {
+            title: "전 세계 스캔 관제 대시보드",
+            ex: [
+              "전 세계 스캔을 지도 히트맵으로 표현하고, 총 누적·정품·가품 스캔, 국가별 스캔량, 월별 추이, 성별·연령대, 핫스팟(가품 발생) 등을 한 화면에서 관제하도록 구현했습니다.",
+              "RegionScan(지역 스캔 분석) 기능을 고도화하고, 결제 흐름·인터랙션·트래픽 등 사용성 개선을 함께 수행했습니다.",
+            ],
+          },
+        ],
+      },
+      {
+        contributionTitle: "가품 대응 & AI 인사이트",
+        contributionLi: [
+          {
+            title: "제보·인사이트·AI 리포트",
+            ex: [
+              "소비자 제보 센터(가품 신고 내역·국가별 신고 비율·IQR 상세·CSV 내보내기)와 이상 가격 탐지로 가품 유통을 모니터링하도록 구현했습니다.",
+              "정품/가품 설문 기반 소비자 인사이트와, 스캔·제보·설문 데이터를 AI가 요약해 핵심 발견·다음 행동을 제안하는 AI 리포트를 구성했습니다.",
+            ],
+          },
+        ],
+      },
+    ],
+    Trouble: [
+      {
+        TroubleTitle: "영업 리소스 병목 — 자동화로 매출 구조 전환",
+        TroubleLi: [
+          {
+            title: "문제점",
+            ex: "브랜드 발굴 → 리포트 작성 → 담당자 컨택으로 이어지는 영업 프로세스가 사람 손에 의존해 리소스 병목이 컸고, 기술팀은 직접적인 매출 기여 경로가 없었습니다.",
+          },
+          {
+            title: "해결",
+            ex: "AI 개발 하네스를 활용해 트렌드 분석·브랜드 추출·리포트 생성·자동 발송을 하나로 잇는 자동 EM 시스템을 영업일 1.5일 만에 구축했습니다. 도입 약 2주 만에 영업자 1인 기준 5개월치 업무량을 소화하며, 기술팀 최초의 직접 매출 성과로 이어졌습니다.",
+          },
+        ],
+      },
+      {
+        TroubleTitle: "빠른 개발 속도와 유지보수 안정성의 양립",
+        TroubleLi: [
+          {
+            title: "문제점",
+            ex: "AI를 단발성으로 사용하면 결과물이 프로젝트 맥락·코드 스타일과 어긋나 '한 번 쓰고 버리는 코드'가 되기 쉬웠고, 이후 유지보수 비용이 커졌습니다.",
+          },
+          {
+            title: "해결",
+            ex: "프로젝트 맥락·의사결정 기록·개발 원칙·작업 로그를 세컨드 브레인에 축적하고, 하네스가 이를 참조하도록 설계했습니다. AI가 제 코드 스타일과 컨텍스트 위에서 동작하게 되면서 개발 속도와 유지보수 안정성을 동시에 확보했으며, 현재 이 프로세스를 팀 표준으로 내재화·고도화하고 있습니다.",
+          },
+        ],
+      },
+    ],
+    images: [
+      { src: "/image/project8/image1.png", title: "랜딩 (Scan to Connect)" },
+      { src: "/image/project8/image2.png", title: "통합 관제 (스캔 지도)" },
+      { src: "/image/project8/image3.png", title: "소비자 제보 센터" },
+      { src: "/image/project8/image4.png", title: "소비자 인사이트" },
+      { src: "/image/project8/image5.png", title: "AI 리포트" },
+    ],
+  },
+  {
+    id: 9,
+    coverImage: "/image/project9/Project9Cover.png",
+    githubLink: null,
+    link: null,
+    mainColor: "#6C63FF",
+    name: "우클",
+    type: "single",
+    tag: ["개인", "React-Native", "학창시절 커뮤니티", "AI 개발", "사이드 프로젝트"],
+    date: "2026.07 ~ 2026.08 (약 2주 · 개발 완료, 배포 진행 중)",
+    description:
+      "‘그 시절 교실의 문이 다시 열립니다.’ 출신 학교(초·중·고)별로 옛 친구를 다시 찾고 소통하는 학창시절 커뮤니티 앱입니다.",
+    subDescription:
+      "학교·졸업연도 기반 커뮤니티, 친구 찾기, 프로필(다이어리·방명록·프로필 음악), 친구 초대 크레딧, 꾸미기 스토어까지 갖춘 소셜 앱으로, AI 개발 하네스와 세컨드 브레인을 활용해 약 2주 만에 기획~개발을 완성했습니다. (다국어 한/영/일 지원, 배포 진행 중)",
+    skills: [
+      "출신 학교(초·중·고)·졸업연도·반 기반 커뮤니티 및 옛 친구 소식 피드",
+      "친구 찾기(추억 속 짝꿍 찾기), 친구 초대 이벤트 + 크레딧 리워드",
+      "프로필: 커버·상태·관심사 태그, 다이어리·방명록, 프로필 음악(‘지금 흐르는 노래’), 피드/영상",
+      "크레딧 충전, 선물하기/받은 선물함, 꾸미기 스토어 등 소셜·수익화 기능",
+      "AI 개발 하네스 + 세컨드 브레인으로 약 2주 만에 기획~개발 완료, 다국어(한/영/일) 지원",
+    ],
+    language: [
+      {
+        name: "React Native (Expo)",
+        languageDescription:
+          "Expo 기반 React Native로 iOS/Android 양쪽에서 동일한 사용자 경험을 제공하며, 빠른 반복 개발과 배포 파이프라인을 구성했습니다.",
+      },
+      {
+        name: "TypeScript",
+        languageDescription:
+          "정적 타입으로 런타임 오류를 줄이고, 다국어 리소스와 상태 관리에서 타입 안정성을 확보했습니다.",
+      },
+      {
+        name: "Firebase",
+        languageDescription:
+          "인증·실시간 데이터·푸시 알림·저장소 등을 Firebase로 구성해 커뮤니티·피드·친구·선물하기 기능의 백엔드를 1인 개발에서도 빠르게 마련했습니다.",
+      },
+      {
+        name: "AI 개발 하네스 (Cursor / Claude)",
+        languageDescription:
+          "세컨드 브레인을 접목한 AI 개발 하네스로 기획·개발·인프라를 단기간에 병행하여, 약 2주 만에 배포 직전 단계까지 완성했습니다.",
+      },
+    ],
+    contribution: [
+      {
+        contributionTitle: "학교별 커뮤니티 & 친구 찾기",
+        contributionLi: [
+          {
+            title: "출신 학교·졸업연도 기반 커뮤니티",
+            ex: [
+              "초·중·고 출신 학교와 졸업연도·반을 기반으로 커뮤니티를 구성하고, 옛 친구들의 새로운 소식을 모아보는 피드를 구현했습니다.",
+              "‘추억 속의 짝꿍 찾기’ 등 옛 친구를 다시 찾는 흐름을 설계했습니다.",
+            ],
+          },
+        ],
+      },
+      {
+        contributionTitle: "프로필 & 소셜 기능",
+        contributionLi: [
+          {
+            title: "미니홈피형 개인 프로필",
+            ex: [
+              "커버·상태·관심사 태그, 다이어리·방명록, 피드/영상 탭, 프로필 음악(‘지금 흐르는 노래’) 재생까지 개인 표현 공간을 구현했습니다.",
+            ],
+          },
+        ],
+      },
+      {
+        contributionTitle: "그로스 & 수익화",
+        contributionLi: [
+          {
+            title: "초대 리워드 · 크레딧 · 스토어",
+            ex: [
+              "친구 초대 시 양쪽에 크레딧을 지급하는 리워드, 크레딧 충전, 선물하기/받은 선물함, 꾸미기 스토어 등 소셜·수익화 요소를 설계했습니다.",
+            ],
+          },
+        ],
+      },
+      {
+        contributionTitle: "1인 풀스택 & 다국어(한/영/일)",
+        contributionLi: [
+          {
+            title: "AI 하네스로 2주 내 완성 + i18n",
+            ex: [
+              "AI 개발 하네스와 세컨드 브레인을 활용해 기획·프론트엔드·백엔드·인프라를 혼자 아우르며 약 2주 만에 개발을 완료했습니다.",
+              "react-i18next 기반으로 한/영/일을 지원하고, 언어 전환이 즉시 반영되도록 구성했습니다.",
+            ],
+          },
+        ],
+      },
+    ],
+    Trouble: [
+      {
+        TroubleTitle: "다국어(i18n) 언어 전환이 즉시 반영되지 않는 문제",
+        TroubleLi: [
+          {
+            title: "문제점",
+            ex: "모듈 스코프에서 번역 함수를 한 번 호출해 상수로 저장하다 보니, 언어를 전환해도 이미 만들어진 문자열이 갱신되지 않아 화면 일부가 이전 언어로 남는 문제가 있었습니다.",
+          },
+          {
+            title: "해결",
+            ex: "번역 값을 모듈 로드 시점에 고정하지 않고, 렌더 시점(컴포넌트 내부/함수 호출 시)마다 t()를 호출하도록 변경해 언어 전환이 전 화면에 즉시 반영되도록 했습니다. 서버에서 내려오는 고정 값은 클라이언트 다국어 리소스로 매핑해 일관성을 유지했습니다.",
+          },
+        ],
+      },
+    ],
+    images: [
+      { src: "/image/project9/image1.png", title: "온보딩" },
+      { src: "/image/project9/image2.png", title: "홈 / 내 학창시절" },
+      { src: "/image/project9/image3.png", title: "프로필" },
+      { src: "/image/project9/image4.png", title: "마이 / 크레딧" },
+    ],
+  },
+  {
+    id: 10,
+    coverImage: "/image/project10/Project10Cover.png",
+    githubLink: "https://github.com/lookpickmanager/LookPick",
+    link: "https://lookpick.co.kr",
+    mainColor: "#2563EB",
+    name: "LookPick",
+    type: "single",
+    tag: ["개인", "AI 매칭", "B2B 플랫폼", "React", "사이드 프로젝트"],
+    date: "2025.08 ~ 2026.03 (7개월, 1인 개발)",
+    description:
+      "AI가 요구사항을 정리하고 검증된 기업을 매칭해주는 B2B 서비스 마켓플레이스로, AI 매칭 상담·공개 RFQ 마켓·구독형 기업 운영 대시보드를 갖춘 풀스택 플랫폼입니다.",
+    subDescription:
+      "‘필요한 서비스, 딱 맞는 파트너를 빠르게.’ AI 매칭 상담부터 공개 RFQ 경쟁 제안, 통계·지표 기반 기업 운영 대시보드까지 기획·디자인·개발·인프라·운영 전 과정을 1인으로 완주했습니다.",
+    skills: [
+      "AI 매칭 상담: 카테고리·세부 분야를 단계별로 선택하면 AI가 요구사항을 정리하고 검증된 기업을 추천 + 견적서 생성",
+      "공개 RFQ 마켓: AI 공고 등록 → 여러 기업의 경쟁 제안 (제안 수·예산·마감·진행중/마감/채택완료 상태 관리)",
+      "구독형 기업 운영 대시보드: 노출·클릭·조회수 추이, 검색 유입 키워드 TOP10, 유입 채널 분석 등 통계·지표 제공",
+      "팀원·게시물·구독 플랜·결제 수단 관리 및 서비스/기업 검색·카테고리 탐색",
+      "게시물 소유권 귀속(Owner/Admin/User) 권한 제어, AWS 인프라 직접 구축·무중단 배포(PM2)·Cloudflare 연동",
+    ],
+    language: [
+      {
+        name: "React 18",
+        languageDescription:
+          "AI 매칭 마법사, 공개 RFQ 마켓, 구독형 기업 운영 대시보드 등 복잡한 화면과 권한별 뷰를 컴포넌트 기반으로 구현했습니다.",
+      },
+      {
+        name: "Node.js (ESM)",
+        languageDescription:
+          "AI 매칭·견적, RFQ 공고·제안, 소유권 귀속 및 권한(Owner/Admin/User) 제어, 통계·지표 집계 API를 직접 설계·구현했습니다.",
+      },
+      {
+        name: "PostgreSQL",
+        languageDescription:
+          "기업·서비스·공고·제안·구독 데이터를 관계형으로 모델링하고, 노출/클릭/유입 채널 등 통계 지표 집계를 안정적으로 처리했습니다.",
+      },
+      {
+        name: "AI (LLM) 매칭·견적",
+        languageDescription:
+          "사용자가 단계별로 입력한 요구사항을 LLM으로 정리해 검증된 기업을 매칭하고, 견적서와 공개 공고(RFQ)를 자동 생성하는 AI 상담 플로우를 구현했습니다.",
+      },
+      {
+        name: "AWS / Cloudflare",
+        languageDescription:
+          "AWS EC2·RDS·S3로 인프라를 직접 구축하고 PM2로 무중단 배포를 운영했으며, Cloudflare DNS/SSL 설정까지 서비스 운영 사이클 전체를 경험했습니다.",
+      },
+      {
+        name: "AI 개발 하네스 (Cursor / Claude)",
+        languageDescription:
+          "세컨드 브레인을 접목한 AI 개발 하네스로 프론트엔드·백엔드·인프라를 병행하며 7개월간 1인 풀스택 개발을 지속 가능하게 운영했습니다.",
+      },
+    ],
+    contribution: [
+      {
+        contributionTitle: "AI 매칭 상담 & 견적 자동화",
+        contributionLi: [
+          {
+            title: "단계별 입력 → AI 기업 추천 + 견적",
+            ex: [
+              "대분류·세부 분야를 단계별로 선택하는 마법사 UI를 구현하고, 입력한 요구사항을 AI가 정리해 검증된 기업을 추천하고 견적서를 함께 제시하도록 설계했습니다.",
+            ],
+          },
+        ],
+      },
+      {
+        contributionTitle: "공개 RFQ 마켓 & 경쟁 제안",
+        contributionLi: [
+          {
+            title: "AI 공고 등록 → 여러 기업 경쟁 제안",
+            ex: [
+              "AI 공고 등록으로 요구사항을 정리해 공개 마켓에 올리면 여러 기업이 경쟁 제안을 보내는 구조를 구현했습니다.",
+              "제안 수·예산·마감·상태(진행중/마감/채택완료)와 검색·정렬을 제공해 요청자가 제안을 한눈에 비교·관리할 수 있게 했습니다.",
+            ],
+          },
+        ],
+      },
+      {
+        contributionTitle: "구독형 기업 운영 대시보드",
+        contributionLi: [
+          {
+            title: "통계·지표 & 운영 관리",
+            ex: [
+              "노출(Impressions)·클릭(Clicks)·조회수 추이, 검색 유입 키워드 TOP10, 유입 경로(네이버/직접/구글/SNS) 등 통계·지표를 시각화했습니다.",
+              "기업 정보·팀원·게시물·구독 플랜·결제 수단까지 소속 회사 범위로 제한된 운영 화면을 제공했습니다.",
+            ],
+          },
+        ],
+      },
+      {
+        contributionTitle: "인프라 구축 및 무중단 배포",
+        contributionLi: [
+          {
+            title: "AWS 인프라 + PM2 + Cloudflare",
+            ex: [
+              "AWS EC2·RDS·S3로 인프라를 직접 구축하고 PM2 기반 무중단 배포를 운영했으며, Cloudflare DNS/SSL을 연동해 안정적인 서비스 환경을 구성했습니다.",
+            ],
+          },
+        ],
+      },
+    ],
+    Trouble: [
+      {
+        TroubleTitle: "Cloudflare/Nginx 리다이렉트 루프(301)와 CORS(Preflight) 장애 복구",
+        TroubleLi: [
+          {
+            title: "문제점",
+            ex: "Cloudflare와 Nginx를 연동하는 과정에서 리다이렉트 루프(301)가 발생하고, CORS Preflight(OPTIONS) 요청이 차단되어 API 통신이 실패했습니다.",
+          },
+          {
+            title: "해결",
+            ex: "브라우저 네트워크 탭과 서버 로그를 대조해 OPTIONS 요청에 대한 204 응답 누락을 원인으로 특정했습니다. Nginx 설정에서 Preflight 요청을 204로 정상 응답하도록 수정하여 통신 장애를 복구하고 서비스를 안정화했습니다.",
+            code: `
+# Nginx - CORS Preflight(OPTIONS) 처리
+location /api/ {
+  if ($request_method = OPTIONS) {
+    add_header 'Access-Control-Allow-Origin' $http_origin always;
+    add_header 'Access-Control-Allow-Methods' 'GET, POST, PUT, DELETE, OPTIONS' always;
+    add_header 'Access-Control-Allow-Headers' 'Authorization, Content-Type' always;
+    add_header 'Access-Control-Allow-Credentials' 'true' always;
+    return 204;   # Preflight는 204로 즉시 응답
+  }
+  proxy_pass http://127.0.0.1:4000;
+}`,
+          },
+        ],
+      },
+    ],
+    images: [
+      { src: "/image/project10/image1.png", title: "메인 / AI 견적·공고" },
+      { src: "/image/project10/image2.png", title: "AI 매칭 상담" },
+      { src: "/image/project10/image3.png", title: "공개 RFQ 마켓" },
+      { src: "/image/project10/image4.png", title: "기업 운영 대시보드" },
+    ],
+  },
+  {
     id: 4,
     coverImage: "/image/project4/Project4Cover.png",
     githubLink: "https://github.com/Hyeong-mai/hingom_photopress",
@@ -734,13 +1123,13 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     coverImage: "/image/project7/Project7Cover.png",
     githubLink: "https://github.com/Hyeong-mai/finf_project",
     link: null,
     mainColor: "#00B4D8",
     name: "Finf",
-    type: "personal",
+    type: "single",
     tag: ["개인", "Flutter", "프리다이빙", "사이드 프로젝트"],
     date: "2025년 1월 ~ 진행 중",
     description:
@@ -1274,7 +1663,7 @@ useEffect(() => {
     ],
   },
   {
-    id: 4,
+    id: 11,
     name: "중고 경매 사이트",
     mainColor: "#333",
     type: "team",

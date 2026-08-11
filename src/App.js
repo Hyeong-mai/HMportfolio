@@ -418,7 +418,7 @@ const MovingText = styled.div`
   }
 
   &::before {
-    content: "Frontend Developer • React • TypeScript • Next.js • Styled-Components • GSAP • Flutter • Dart • Tailwind CSS • Redux Toolkit • GetX • Fabric.js • Framer Motion • Git • Vercel • Jira • Notion • Slack • Teams •";
+    content: "Frontend Developer • AI 하네스 • 세컨드 브레인 • Claude • Cursor • React • TypeScript • Next.js • React Query • Styled-Components • GSAP • Flutter • Dart • Node.js • PostgreSQL • AWS • Cloudflare • Socket.io • Git • Vercel • Notion • Obsidian •";
     position: absolute;
     left: 0;
     color: #00a8ff;
@@ -670,6 +670,42 @@ const ResumeModal = ({ isOpen, onClose }) => {
         <ModalCloseButton onClick={onClose}>×</ModalCloseButton>
         <ModalTitle>자기소개서</ModalTitle>
         <ModalText>
+          <h3>AI를 '개발 방식'으로 내재화하다 — 세컨드 브레인과 하네스</h3>
+          <p>
+            저는 AI를 단발성으로 호출하는 데 그치지 않고, 직접 구축한 개발
+            하네스(harness)에 세컨드 브레인(지식 베이스)을 접목해 일관되고
+            유지보수 가능한 결과물을 만드는 워크플로우를 운영하고 있습니다.
+            프로젝트의 맥락·의사결정 기록·저만의 개발 원칙·작업 로그를 세컨드
+            브레인에 축적하고, 하네스가 이를 참조하도록 설계해 AI가 제 코드
+            스타일과 프로젝트 컨텍스트 위에서 동작하게 만들었습니다. 그 결과 '한
+            번 쓰고 버리는 코드'가 아니라, 시간이 지나도 안정적으로 유지보수되는
+            코드를 빠르게 확보할 수 있었습니다.
+          </p>
+          <div className="highlight">
+            자동 EM 시스템 영업일 1.5일 만에 개발 · 2주 만에 영업자 1인 5개월치
+            업무량 소화 · 기술팀 최초의 직접 매출 기여
+          </div>
+          <p>
+            이 방식은 씨케이앤비(CK&amp;B)에서 실제 매출 성과로 이어졌습니다. 기존
+            서비스의 유지보수·안정화로 서비스를 깊이 이해한 뒤, 2026년 6월 단 한
+            달간의 신규 개발로 정품 인증 관제 SaaS ‘히든태그 커넥트(HIDDENTAG
+            CONNECT)’의 신규 매출 기능을 기획 단계부터 주도해
+            6월 24일 개발을 완료하고 7월 1일 배포했습니다. 특히 트렌드 분석 →
+            브랜드 추출 → 리포트 생성 → 담당자 자동 발송까지 잇는 자동 EM(이메일
+            마케팅) 시스템을 영업일 1.5일 만에 구축했고, 도입 약 2주 만에 영업
+            담당자 1인 기준 5개월치 업무량을 소화하며 기술팀 최초의 직접 매출 기여
+            사례를 만들었습니다. 저는 해당 프로젝트의 PM을 맡아 백엔드
+            개발자·디자이너와 협업을 리드했습니다.
+          </p>
+          <p>
+            같은 개발 방식은 사이드 프로젝트에서도 속도로 증명되고 있습니다.
+            학창시절 커뮤니티 앱 '우클'을 AI 하네스와 세컨드 브레인을 활용해 약
+            2주 만에 기획부터 개발까지 완성하고 8월 초 배포를 진행 중이며, B2B 매칭
+            플랫폼 'LookPick'은 기획·디자인·개발·인프라·운영 전 과정을 1인으로
+            완주했습니다. 지금은 이 AI 개발 프로세스를 팀이 함께 쓸 수 있는
+            표준으로 내재화하고 고도화하는 작업을 진행 중입니다.
+          </p>
+
           <h3>"와, 이런 기능도 있네"</h3>
           <p>
             저는 항상 사용자가 만족할 수 있는 경험을 제공하기 위해 노력했습니다.

@@ -2,7 +2,16 @@ import React, { useLayoutEffect, useRef } from "react";
 import styled from "styled-components";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaReact, FaGitAlt, FaCode } from "react-icons/fa";
+import {
+  FaReact,
+  FaGitAlt,
+  FaCode,
+  FaRobot,
+  FaBrain,
+  FaNodeJs,
+  FaDatabase,
+  FaAws,
+} from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -290,6 +299,41 @@ const About = () => {
               <TechItem>
                 <FaCode />
                 <span>Dart</span>
+              </TechItem>
+            </TechGrid>
+          </TechStackCard>
+        </ContentSection>
+        <ContentSection className="about-content">
+          <TechStackCard>
+            <TechStackTitle>AI & Backend / Infra</TechStackTitle>
+            <TechGrid>
+              <TechItem>
+                <FaRobot />
+                <span>AI 하네스</span>
+                <TechDescription>Cursor / Claude</TechDescription>
+              </TechItem>
+              <TechItem>
+                <FaBrain />
+                <span>세컨드 브레인</span>
+                <TechDescription>지식 베이스 접목</TechDescription>
+              </TechItem>
+              <TechItem>
+                <FaNodeJs />
+                <span>Node.js</span>
+              </TechItem>
+              <TechItem>
+                <FaDatabase />
+                <span>PostgreSQL</span>
+              </TechItem>
+              <TechItem>
+                <FaAws />
+                <span>AWS</span>
+                <TechDescription>EC2 · RDS · S3</TechDescription>
+              </TechItem>
+              <TechItem>
+                <FaCode />
+                <span>Cloudflare</span>
+                <TechDescription>DNS / SSL</TechDescription>
               </TechItem>
             </TechGrid>
           </TechStackCard>
